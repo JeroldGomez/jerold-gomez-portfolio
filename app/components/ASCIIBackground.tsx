@@ -3,9 +3,9 @@
 
 import React, { useRef, useEffect, useCallback } from 'react';
 import { createNoise3D } from 'simplex-noise'; // Use 3D noise for better flow over time
-
+// .,:;-=+#0&$%@
 // --- Configuration ---
-const CHARACTER_SET = '.:-=+*#%@'; // Characters from sparse to dense (adjust!)
+const CHARACTER_SET = '.,:;-+=08#&$%@'; // Characters from sparse to dense (adjust!)
 // Or try different sets: ' .,:;i1tfLCG08@' or just binary ' #' etc.
 const CELL_SIZE = 16;        // Pixel size of each grid cell
 const FONT_SIZE = 16;        // Font size in pixels (should be close to CELL_SIZE)
@@ -14,7 +14,7 @@ const NOISE_SPEED = 0.03;    // How fast the noise pattern evolves
 const OPACITY_MULTIPLIER = 0.9; // Overall opacity adjustment (0 to 1)
 const BACKGROUND_COLOR = '#0a0a0a'; // Slightly off-black can look nice
 // const CHARACTER_COLOR = 'rgba(0, 255, 100, '; // Base color (greenish), alpha added later
-const CHARACTER_COLOR = 'rgba(27, 67, 50, '; 
+const CHARACTER_COLOR = 'rgba(0, 119, 182, '; 
 
 const AsciiBackground: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
