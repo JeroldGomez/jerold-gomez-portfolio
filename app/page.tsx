@@ -18,10 +18,10 @@ const workExperience: Experience[] = [
     date: "Aug - Sep, 2024",
     logo: "/cct_logo_t.png", // <-- Replace with your actual logo path
     alt: "Company A Logo",
-    title: "Data Analyst Intern - CCT",
+    title: "Data Analyst Intern · CCT",
     companyLink: "https://example.com/companya", // <-- Replace with actual link
     description:
-      "Hands-on experience in data management, analysis, and visualization.",
+      "Developed predictive models for customer churn, resulting in a 15% reduction. Built data pipelines using Python and Airflow to automate reporting processes, saving hundreds of hours.",
     location: "Tagaytay City, Cavite",
     locationType: "office", // 'office' or 'remote'
   },
@@ -29,7 +29,7 @@ const workExperience: Experience[] = [
     date: "2023 - 2024",
     logo: "/cct_logo_t.png", // <-- Replace with your actual logo path
     alt: "University Logo",
-    title: "Junior IT Analyst - CCT",
+    title: "Junior IT Analyst · CCT",
     companyLink: "https://example.edu/ai-lab", // <-- Replace with actual link
     description:
       "Assisted senior researchers with data collection, cleaning, and analysis for machine learning projects. Co-authored a paper on natural language processing techniques presented at a regional conference.",
@@ -41,49 +41,43 @@ const workExperience: Experience[] = [
 
 export default function Home() {
   return (
-    // No need for the outer empty div usually
-    // Use <main> as the primary container for the page's main content
-    <main className="
-      min-h-screen
-      flex flex-col
-      justify-center
-      w-full
-      max-w-3xl
-      mx-auto
-      item-start
-      px-4 sm:px-6 lg:px-8
-      gap-8
-      relative z-10
+    <div className="relative">
+      {/* Introduction Section - Fixed height, centered */}
+      <section className="
+        h-screen
+        flex 
+        flex-col 
+        justify-center 
+        items-start
+        w-full 
+        max-w-3xl 
+        mx-auto 
+        px-4 sm:px-6 lg:px-8 
+        gap-8
+        relative z-10
       ">
-
-      {/* Optional: Group Image and Intro Text if needed for specific alignment later */}
-      {/* <div className="flex flex-col items-start gap-8"> */}
         <div>
           <Image
-            className="rounded-lg" // Make the image circular
+            className="rounded-lg"
             src="/jerold.jpg"
             alt="My Picture"
-            width={100} // Adjust size as desired (make width/height equal for circle)
+            width={100}
             height={100}
             priority
           />
         </div>
-        
 
-        {/* Use a more descriptive text size class like text-lg or text-xl */}
-        {/* Use leading-relaxed or similar for better line spacing */}
-        <p className="text-xl leading-relaxed font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-text-color)]"> 
-          <span className="text-4xl leading-relaxed font-[family-name:var(--font-playfair-display)] text-[color:var(--secondary-text-color)]">
+        <p className="text-xl font-normal leading-relaxed font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-text-color)]"> 
+          <span className="text-4xl font-[family-name:var(--font-playfair-display)] text-[color:var(--secondary-text-color)]">
             A{" "} 
           </span> 
           dedicated{" "}
-          <span
-            className="font-semibold text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic"
-          >
+          <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
             data science enthusiast
           </span>
-            {" "}with a profound love for the captivating realm of analytics. Currently pursuing my Bachelor's degree in Computer Science, I find joy in unraveling the insights hidden within data sets and transforming them into meaningful stories.
+          {" "}with a profound love for the captivating realm of analytics. Currently pursuing my Bachelor's degree in Computer Science, I find joy in unraveling the insights hidden within data sets and transforming them into meaningful stories.
         </p>
+
         <div className="flex gap-4 items-center flex-col sm:flex-row font-[family-name:var(--font-geist-sans)]">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
@@ -91,12 +85,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              src="/mail.png"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
+            <Image src="/mail.png" alt="Vercel logomark" width={20} height={20} />
             Email
           </a>
           <a
@@ -105,37 +94,31 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              src="/github.png"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
+            <Image src="/github.png" alt="Vercel logomark" width={20} height={20} />
             Github
           </a>
         </div>
+      </section>
 
-      {/* --- Add Other Sections Below --- */}
-      
-      <section className="w-full flex flex-col gap-y-8 mt-30"> {/* Add gap between header and items */}
-         {/* Section Header */}
-          <h2 className="text-2xl sm:text-3xl flex items-center gap-4 font-medium text-[color:var(--primary-blue)] font-[family-name:var(--font-playfair-display)]">
-              <Image
-                className="w-6 h-6 sm:w-6 sm:h-6"
-                src="/briefcase.png"
-                alt="Vercel logomark"
-                width={20}
-                height={20}
-              />
-              Work Experience
+      {/* Content Section - Scrollable */}
+      <section className="
+        w-full 
+        max-w-3xl 
+        mx-auto 
+        px-4 sm:px-6 lg:px-8 
+        py-16
+        relative z-10
+      ">
+        <div className="flex flex-col gap-y-8">
+          <h2 className="text-2xl sm:text-3xl flex items-center gap-4 font-medium font-[family-name:var(--font-playfair-display)] opacity-80">
+            Work Experience
           </h2>
           <div className="w-full h-px bg-neutral-700/60" />
 
-          {/* List of Experience Items */}
-          <div className="flex flex-col gap-y-6 font-[family-name:var(--font-geist-mono)]"> {/* Vertical line simulation & padding */}
+          <div className="flex flex-col gap-y-6 font-[family-name:var(--font-geist-mono)]">
             {workExperience.map((exp, index) => (
               <ExperienceItem
-                key={index} // Use a unique key, index is okay if list isn't reordered
+                key={index}
                 date={exp.date}
                 logo={exp.logo}
                 alt={exp.alt}
@@ -147,8 +130,8 @@ export default function Home() {
               />
             ))}
           </div>
+        </div>
       </section>
-
-    </main>
+    </div>
   );
 }
