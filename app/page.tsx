@@ -57,25 +57,33 @@ export default function Home() {
         relative z-10
       ">
         <div>
-          <Image
+          {/* <Image
             className="rounded-lg"
             src="/jerold.jpg"
             alt="My Picture"
             width={100}
             height={100}
             priority
-          />
+          /> */}
         </div>
-
-        <p className="text-xl font-normal leading-relaxed font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-text-color)]"> 
-          <span className="text-4xl font-[family-name:var(--font-playfair-display)] text-[color:var(--secondary-text-color)]">
-            A{" "} 
-          </span> 
-          dedicated{" "}
-          <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
-            data science enthusiast
+        <p className="text-sm font-light leading-relaxed font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-text-color)]">
+          Hi, my name is <br /><br />
+          <span className="text-5xl font-bold font-[family-name:var(--font-geist-sans)] text-[color:var(--secondary-text-color)]">
+            Jerold Gomez
+          </span> <br />
+          <span className="text-[#929DA7] text-5xl font-bold font-[family-name:var(--font-geist-sans)]">
+            A data{" "} 
+            <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
+            science{" "}
+            </span>
+            enthusiast
           </span>
-          {" "}with a profound love for the captivating realm of analytics. Currently pursuing my Bachelor's degree in Computer Science, I find joy in unraveling the insights hidden within data sets and transforming them into meaningful stories.
+        </p>
+        <p className="text-xl font-semibold font-[family-name:var(--font-geist-sans)] text-[#929DA7]"> 
+          Currently pursuing my Bachelor's degree in Computer Science, I find joy in unraveling the insights hidden within data sets and transforming them into {" "}
+          <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
+            meaningful stories.
+          </span>
         </p>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row font-[family-name:var(--font-geist-sans)]">
