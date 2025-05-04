@@ -117,6 +117,18 @@ export default function Home() {
         py-16
         relative z-10
       ">
+        {/* About me Section */}
+        <div className="flex flex-col mb-40">
+          <span>
+            
+          </span>
+          <h2 className="text-2xl sm:text-3xl flex items-center gap-4 font-bold font-[family-name:var(--font-geist-sans)]">
+            About Me
+          </h2>
+          <p className="font-[family-name:var(--font-geist-sans)]">Testing</p>
+        </div>
+
+        {/* Work Experience Section */}
         <div className="flex flex-col gap-y-8">
           <h2 className="text-2xl sm:text-3xl flex items-center gap-4 font-medium font-[family-name:var(--font-playfair-display)] opacity-80">
             Work Experience
