@@ -116,9 +116,9 @@ export default function Home() {
         <div className="flex flex-col mb-40">
           <div className="mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-geist-sans)]">
-              <span className="text-sm font-light font-[family-name:var(--font-geist-mono)]">
-                01.{" "}
-              </span>
+            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
+              ~/01.
+            </span>
               About Me
             </h2>
           </div>
