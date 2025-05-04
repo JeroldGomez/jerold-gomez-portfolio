@@ -1,6 +1,8 @@
-import Image from "next/image";
-import { BriefcaseIcon } from "@heroicons/react/24/outline"; // Section icon
+'use client'; 
+
+import Image from "next/image"; // Section icon
 import ExperienceItem from "./components/ExperienceItem"; // Import the component
+import Tilt from 'react-parallax-tilt'; 
 
 type Experience = {
   date: string;
@@ -57,14 +59,7 @@ export default function Home() {
         relative z-10
       ">
         <div>
-          {/* <Image
-            className="rounded-lg"
-            src="/jerold.jpg"
-            alt="My Picture"
-            width={100}
-            height={100}
-            priority
-          /> */}
+          
         </div>
         <p className="text-sm font-light leading-relaxed font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-text-color)]">
           Hi, my name is <br /><br />
@@ -119,13 +114,65 @@ export default function Home() {
       ">
         {/* About me Section */}
         <div className="flex flex-col mb-40">
-          <span>
-            
-          </span>
-          <h2 className="text-2xl sm:text-3xl flex items-center gap-4 font-bold font-[family-name:var(--font-geist-sans)]">
-            About Me
-          </h2>
-          <p className="font-[family-name:var(--font-geist-sans)]">Testing</p>
+          <div className="mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-geist-sans)]">
+              <span className="text-sm font-light font-[family-name:var(--font-geist-mono)]">
+                01.{" "}
+              </span>
+              About Me
+            </h2>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-8 items-start">
+            <div className="w-full sm:w-1/3 flex-shrink-0 mb-6 sm:mb-0">
+              <Tilt
+                className="tilt-container overflow-hidden rounded-lg"
+                perspective={1000} // Adjust perspective
+                glareEnable={true} // Add a glare effect
+                glareMaxOpacity={0.3} // Glare opacity
+                glarePosition="all"
+                scale={1.02} // Slight scale on hover
+                tiltMaxAngleX={15} // Max tilt on X axis
+                tiltMaxAngleY={15} // Max tilt on Y axis
+                transitionSpeed={1000} // Speed of tilt returning to normal
+                gyroscope={true} // Enable tilt on mobile gyroscope
+              >
+              {/* The actual content to be tilted */}
+              <div className="tilt-inner bg-neutral-800/50 p-1 rounded-lg">
+                <Image
+                  className="rounded-md w-full h-auto block"
+                  src="/jerold.jpg"
+                  alt="My Picture"
+                  width={300} // Intrinsic width
+                  height={300} // Intrinsic height
+                  priority
+                />
+              </div>
+            </Tilt>
+            </div>
+            <div className="w-full sm:w-2/3">
+              <p className="font-[family-name:var(--font-geist-sans)] text-[color:var(--secondary-text-color)] leading-relaxed">
+                I am a passionate{" "}
+                <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
+                Computer Science{" "}
+                </span>
+                student with a keen interest in data science and AI. I enjoy working on projects that combine intelligent technologies and practical applications to improve user experiences and streamline processes.
+              </p>
+              <p className="font-[family-name:var(--font-geist-sans)] text-[#929DA7] leading-relaxed mt-4">
+                Currently, I am exploring the field of artificial intelligence more deeply through my thesis project, the development of an{" "} 
+                <span className="font-normal text-[#ffffff] font-[family-name:var(--font-playfair-display)] italic">
+                AI-powered chatbot{" "}
+                </span>
+                that assists students with general inquiries at our institution. This project involves tools such as OpenAI, Firebase, and Node.js, and has strengthened my skills in natural language processing, chatbot development, and cloud integration.
+                <br /> <br />
+                Outside of academics, I'm constantly learning new technologies, experimenting with innovative solutions, and looking for ways to apply my knowledge to{" "} 
+                <span className="font-normal font-[family-name:var(--font-playfair-display)] italic text-[#ffffff]">
+                create meaningful impact{" "}
+                </span>
+                through tech.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Work Experience Section */}
