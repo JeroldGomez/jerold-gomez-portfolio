@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, IBM_Plex_Mono, Playfair_Display, Inter } from "next/font/google";
+import { Geist, Geist_Mono, IBM_Plex_Mono, Playfair_Display} from "next/font/google";
 import "./globals.css";
 import AsciiBackground from "./components/ASCIIBackground";
 
@@ -30,11 +30,11 @@ const playfairDisplay = Playfair_Display({
   display: 'swap', // Good for performance
 });
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-});
+// const inter = Inter({
+//   subsets: ['latin'],
+//   variable: '--font-inter',
+//   display: 'swap',
+// });
 
 export const metadata: Metadata = {
   title: "Jerold Gomez | Portfolio",
@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${inter.variable} ${ibmPlexMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${ibmPlexMono.variable} antialiased`}
       >
         <AsciiBackground /> {/* Add the background component here */}
         {/* Ensure content container uses relative/z-index to appear above background */}

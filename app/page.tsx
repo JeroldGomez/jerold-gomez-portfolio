@@ -113,14 +113,16 @@ export default function Home() {
         relative z-10
       ">
         {/* About me Section */}
-        <div className="flex flex-col mb-40">
+        <div className="flex flex-col mb-80">
           <div className="mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-geist-sans)]">
+
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
-              ~/01.
+              01.
             </span>
-              About Me
+            A Bit About Me
             </h2>
+            <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-8 items-start">
@@ -177,12 +179,17 @@ export default function Home() {
 
         {/* Work Experience Section */}
         <div className="flex flex-col gap-y-8">
-          <h2 className="text-2xl sm:text-3xl flex items-center gap-4 font-medium font-[family-name:var(--font-playfair-display)] opacity-80">
-            Work Experience
-          </h2>
-          <div className="w-full h-px bg-neutral-700/60" />
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-geist-sans)]">
+            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
+              02.
+            </span>
+            Where I’ve Worked
+            </h2>
+            <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div>
+          </div>
 
-          <div className="flex flex-col gap-y-6 font-[family-name:var(--font-geist-mono)]">
+          <div className="flex flex-col gap-y-6">
             {workExperience.map((exp, index) => (
               <ExperienceItem
                 key={index}
