@@ -114,20 +114,18 @@ export default function Home() {
       ">
         {/* About me Section */}
         <div className="flex flex-col mb-80">
-          <div className="mb-10">
-            <h2 className="text-2xl sm:text-3xl font-semibold font-[family-name:var(--font-geist-sans)]">
+          <div className="mb-5">
+            <h2 className="text-2xl sm:text-2xl font-bold font-[family-name:var(--font-geist-sans)]">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
               01.
             </span>
-            A{" "}
+            A Bit About{" "}
             <span className="font-normal font-[family-name:var(--font-playfair-display)] italic">
-            Bit{" "}
+            Me
             </span>
-            About Me
+             
             </h2>
-            {/* <div className="flex items-center justify-center">
-              <div className="h-[1px] bg-[#c1121f] opacity-60"></div>
-            </div> */}
+            <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-8 items-start">
@@ -185,7 +183,7 @@ export default function Home() {
         {/* Work Experience Section */}
         <div className="flex flex-col gap-y-8">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-semibold font-[family-name:var(--font-geist-sans)]">
+            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
               02.
             </span>
@@ -195,7 +193,8 @@ export default function Home() {
             </span >
              
             </h2>
-            {/* <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div> */}
+            <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div>
+            
           </div>
 
           <div className="flex flex-col gap-y-6">
