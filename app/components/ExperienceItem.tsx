@@ -50,7 +50,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                             tiltMaxAngleX={15} // Max tilt on X axis
                             tiltMaxAngleY={15} // Max tilt on Y axis
                             transitionSpeed={1000} // Speed of tilt returning to normal
-                            gyroscope={true} 
+                            // gyroscope={true} 
                         >
                     <div className="h-12 w-12 rounded-md bg-neutral-800/50 border border-neutral-700/50 flex items-center justify-center transition-transform duration-300">
                         <Image
@@ -58,7 +58,6 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                             alt={alt}
                             width={30}
                             height={30}
-                            className="object-contain"
                         />  
                     </div>
                     </Tilt>

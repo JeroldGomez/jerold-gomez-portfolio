@@ -18,7 +18,7 @@ type Experience = {
 const workExperience: Experience[] = [
   {
     date: "Aug - Sep, 2024",
-    logo: "/cct_logo_t.png", // <-- Replace with your actual logo path
+    logo: "/cct_logo_t_main.svg", // <-- Replace with your actual logo path
     alt: "Company A Logo",
     title: "Data Analyst Intern · CCT",
     companyLink: "https://example.com/companya", // <-- Replace with actual link
@@ -29,7 +29,7 @@ const workExperience: Experience[] = [
   },
   {
     date: "2023 - 2024",
-    logo: "/cct_logo_t.png", // <-- Replace with your actual logo path
+    logo: "/cct_logo_t_main.svg", // <-- Replace with your actual logo path
     alt: "University Logo",
     title: "Junior IT Analyst · CCT",
     companyLink: "https://example.edu/ai-lab", // <-- Replace with actual link
@@ -115,14 +115,19 @@ export default function Home() {
         {/* About me Section */}
         <div className="flex flex-col mb-80">
           <div className="mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-geist-sans)]">
-
+            <h2 className="text-2xl sm:text-3xl font-semibold font-[family-name:var(--font-geist-sans)]">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
               01.
             </span>
-            A Bit About Me
+            A{" "}
+            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic">
+            Bit{" "}
+            </span>
+            About Me
             </h2>
-            <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div>
+            {/* <div className="flex items-center justify-center">
+              <div className="h-[1px] bg-[#c1121f] opacity-60"></div>
+            </div> */}
           </div>
           
           <div className="flex flex-col sm:flex-row gap-8 items-start">
@@ -137,7 +142,7 @@ export default function Home() {
                 tiltMaxAngleX={15} // Max tilt on X axis
                 tiltMaxAngleY={15} // Max tilt on Y axis
                 transitionSpeed={1000} // Speed of tilt returning to normal
-                gyroscope={true} // Enable tilt on mobile gyroscope
+                // gyroscope={true} // Enable tilt on mobile gyroscope
               >
               {/* The actual content to be tilted */}
               <div className="tilt-inner bg-neutral-800/50 p-1 rounded-lg">
@@ -180,13 +185,17 @@ export default function Home() {
         {/* Work Experience Section */}
         <div className="flex flex-col gap-y-8">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-geist-sans)]">
+            <h2 className="text-2xl sm:text-3xl font-semibold font-[family-name:var(--font-geist-sans)]">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
               02.
             </span>
-            Where I’ve Worked
+            Where I’ve{" "}
+            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic">
+            Worked
+            </span >
+             
             </h2>
-            <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div>
+            {/* <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div> */}
           </div>
 
           <div className="flex flex-col gap-y-6">
