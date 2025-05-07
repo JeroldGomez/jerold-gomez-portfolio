@@ -30,7 +30,18 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
     const LocationIcon = locationType === "office" ? MapPinIcon : GlobeAltIcon;
 
     return (
-        <motion.div
+        <Tilt
+            className="tilt-container overflow-hidden rounded-lg"
+            perspective={1000} // Adjust perspective
+            glareEnable={true} // Add a glare effect
+            glareMaxOpacity={0.08} // Glare opacity
+            glarePosition="all"
+            scale={1.02} // Slight scale on hover
+            tiltMaxAngleX={2} // Max tilt on X axis
+            tiltMaxAngleY={2} // Max tilt on Y axis
+            transitionSpeed={1000} 
+        >
+            <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -105,6 +116,8 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                 </div>
             </div>
         </motion.div>
+        </Tilt>
+        
     );
 };
 

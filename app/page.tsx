@@ -2,8 +2,10 @@
 
 import Image from "next/image"; // Section icon
 import ExperienceItem from "./components/ExperienceItem"; // Import the component
+import ProjectCard from "./components/ProjectCard";
 import Tilt from 'react-parallax-tilt'; 
 import { motion } from 'framer-motion'; // Add Framer Motion import
+import { LightBulbIcon } from "@heroicons/react/24/outline";
 
 type Experience = {
   date: string;
@@ -258,7 +260,7 @@ export default function Home() {
         </motion.div>
 
         {/* Work Experience Section */}
-        <div className="flex flex-col gap-y-8">
+        <div className="flex flex-col gap-y-8 mb-50">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -300,6 +302,33 @@ export default function Home() {
         </div>
 
         {/* My Project Section */}
+
+        <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
+            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
+              03.
+            </span>
+            What I've{" "}
+            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic">
+            Built
+            </span >
+             
+            </h2>
+            <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4 mb-6"></div>
+
+        {/* Grid for Project Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          {projectsData.map((project, index) => (
+            <ProjectCard
+              key={index} // Ideally use a unique project ID if available
+              title={project.title}
+              imageUrl={project.imageUrl}
+              description={project.description}
+              technologies={project.technologies}
+              liveLink={project.liveLink}
+              githubLink={project.githubLink}
+            />
+          ))}
+        </div>
       </section>
     </div>
   );
