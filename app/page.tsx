@@ -199,7 +199,7 @@ export default function Home() {
           
           <div className="flex flex-col sm:flex-row gap-8 items-start">
             <motion.div 
-              initial={{ opacity: 0, y: -8 }}
+              initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
