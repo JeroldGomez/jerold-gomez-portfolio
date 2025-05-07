@@ -3,6 +3,7 @@
 import Image from "next/image"; // Section icon
 import ExperienceItem from "./components/ExperienceItem"; // Import the component
 import Tilt from 'react-parallax-tilt'; 
+import { motion } from 'framer-motion'; // Add Framer Motion import
 
 type Experience = {
   date: string;
@@ -14,6 +15,37 @@ type Experience = {
   location: string;
   locationType: "office" | "remote";
 };
+
+const projectsData = [
+  {
+    title: "AI-Powered Student Chatbot",
+    imageUrl: "/projects/chatbot-mockup.png", // <-- Replace with your actual image path
+    description:
+      "Developed an intelligent chatbot using OpenAI, Firebase, and Node.js to assist university students with general inquiries, streamlining support and improving response times.",
+    technologies: ["OpenAI API", "Node.js", "Firebase", "React", "NLP"],
+    liveLink: "#", // Optional: Link to live demo (e.g., "https://mychatbot.example.com")
+    githubLink: "https://github.com/yourusername/chatbot-project", // Optional
+  },
+  {
+    title: "E-commerce Analytics Dashboard",
+    imageUrl: "/projects/dashboard-mockup.png", // <-- Replace
+    description:
+      "Designed and built an interactive dashboard for an e-commerce client to visualize sales trends, customer behavior, and inventory levels, enabling data-driven decision-making.",
+    technologies: ["Python (Pandas, Plotly)", "SQL", "Tableau", "React"],
+    liveLink: null, // No live link for this one
+    githubLink: "https://github.com/yourusername/ecommerce-dashboard",
+  },
+  {
+    title: "Personal Portfolio Website",
+    imageUrl: "/projects/portfolio-mockup.png", // <-- Replace
+    description:
+      "This very portfolio! Built with Next.js, Tailwind CSS, and showcasing a blend of data science projects and my journey in tech. Features an animated ASCII background.",
+    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Canvas API"],
+    liveLink: "/", // Link to the current site
+    githubLink: "https://github.com/yourusername/my-portfolio",
+  },
+  // Add more project objects here...
+];
 
 const workExperience: Experience[] = [
   {
@@ -61,28 +93,55 @@ export default function Home() {
         <div>
           
         </div>
-        <p className="text-sm font-light leading-relaxed font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-text-color)]">
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-sm font-light leading-relaxed font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-text-color)]"
+        >
           Hi, my name is <br /><br />
-          <span className="text-5xl font-bold font-[family-name:var(--font-geist-sans)] text-[color:var(--secondary-text-color)]">
+          <motion.span 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-5xl font-bold font-[family-name:var(--font-geist-sans)] text-[color:var(--secondary-text-color)]"
+          >
             Jerold Gomez
-          </span> <br />
-          <span className="text-[#929DA7] text-5xl font-bold font-[family-name:var(--font-geist-sans)]">
+          </motion.span> <br />
+          <motion.span 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-[#929DA7] text-5xl font-bold font-[family-name:var(--font-geist-sans)]"
+          >
             A data{" "} 
             <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
             science{" "}
             </span>
             enthusiast
-          </span>
-        </p>
-        <p className="text-xl font-semibold font-[family-name:var(--font-geist-sans)] text-[#929DA7]"> 
+          </motion.span>
+        </motion.p>
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="text-xl font-semibold font-[family-name:var(--font-geist-sans)] text-[#929DA7]"
+        > 
           Currently pursuing my Bachelor's degree in Computer Science, I find joy in unraveling the insights hidden within data sets and transforming them into {" "}
           <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
             meaningful stories.
           </span>
-        </p>
+        </motion.p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row font-[family-name:var(--font-geist-sans)]">
-          <a
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="flex gap-4 items-center flex-col sm:flex-row font-[family-name:var(--font-geist-sans)]"
+        >
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
@@ -90,8 +149,10 @@ export default function Home() {
           >
             <Image src="/mail.png" alt="Vercel logomark" width={20} height={20} />
             Email
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] gap-2 dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
@@ -99,8 +160,8 @@ export default function Home() {
           >
             <Image src="/github.png" alt="Vercel logomark" width={20} height={20} />
             Github
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </section>
 
       {/* Content Section - Scrollable */}
@@ -113,7 +174,13 @@ export default function Home() {
         relative z-10
       ">
         {/* About me Section */}
-        <div className="flex flex-col mb-80">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col mb-80"
+        >
           <div className="mb-5">
             <h2 className="text-2xl sm:text-2xl font-bold font-[family-name:var(--font-geist-sans)]">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
@@ -129,33 +196,43 @@ export default function Home() {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-8 items-start">
-            <div className="w-full sm:w-1/3 flex-shrink-0 mb-6 sm:mb-0">
+            <motion.div 
+              initial={{ opacity: 0, y: -8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="w-full sm:w-1/3 flex-shrink-0 mb-6 sm:mb-0"
+            >
               <Tilt
                 className="tilt-container overflow-hidden rounded-lg"
-                perspective={1000} // Adjust perspective
-                glareEnable={true} // Add a glare effect
-                glareMaxOpacity={0.3} // Glare opacity
+                perspective={1000}
+                glareEnable={true}
+                glareMaxOpacity={0.3}
                 glarePosition="all"
-                scale={1.02} // Slight scale on hover
-                tiltMaxAngleX={15} // Max tilt on X axis
-                tiltMaxAngleY={15} // Max tilt on Y axis
-                transitionSpeed={1000} // Speed of tilt returning to normal
-                // gyroscope={true} // Enable tilt on mobile gyroscope
+                scale={1.02}
+                tiltMaxAngleX={15}
+                tiltMaxAngleY={15}
+                transitionSpeed={1000}
               >
-              {/* The actual content to be tilted */}
-              <div className="tilt-inner bg-neutral-800/50 p-1 rounded-lg">
-                <Image
-                  className="rounded-md w-full h-auto block"
-                  src="/jerold.jpg"
-                  alt="My Picture"
-                  width={300} // Intrinsic width
-                  height={300} // Intrinsic height
-                  priority
-                />
-              </div>
-            </Tilt>
-            </div>
-            <div className="w-full sm:w-2/3">
+                <div className="tilt-inner bg-neutral-800/50 p-1 rounded-lg">
+                  <Image
+                    className="rounded-md w-full h-auto block"
+                    src="/jerold.jpg"
+                    alt="My Picture"
+                    width={300}
+                    height={300}
+                    priority
+                  />
+                </div>
+              </Tilt>
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="w-full sm:w-2/3"
+            >
               <p className="font-[family-name:var(--font-geist-sans)] text-[color:var(--secondary-text-color)] leading-relaxed">
                 I am a passionate{" "}
                 <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
@@ -176,18 +253,25 @@ export default function Home() {
                 </span>
                 through tech.
               </p>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Work Experience Section */}
         <div className="flex flex-col gap-y-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+
           <div>
             <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
               02.
             </span>
-            Where I’ve{" "}
+            Where I've{" "}
             <span className="font-normal font-[family-name:var(--font-playfair-display)] italic">
             Worked
             </span >
@@ -196,6 +280,7 @@ export default function Home() {
             <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div>
             
           </div>
+          </motion.div>
 
           <div className="flex flex-col gap-y-6">
             {workExperience.map((exp, index) => (
@@ -213,6 +298,8 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        {/* My Project Section */}
       </section>
     </div>
   );
