@@ -21,9 +21,9 @@ type Experience = {
 const projectsData = [
   {
     title: "AI-Powered Student Chatbot",
-    imageUrl: "/projects/chatbot-mockup.png", // <-- Replace with your actual image path
+    imageUrl: "/login.png", // <-- Replace with your actual image path
     description:
-      "Developed an intelligent chatbot using OpenAI, Firebase, and Node.js to assist university students with general inquiries, streamlining support and improving response times.",
+      "Developed an intelligent chatbot using OpenAI, Firebase, and Node.js to assist university students with general inquiries, streamlining support and improving response times. Developed an intelligent chatbot using OpenAI, Firebase, and Node.js to assist university students with general inquiries, streamlining support and improving response times.",
     technologies: ["OpenAI API", "Node.js", "Firebase", "React", "NLP"],
     liveLink: "#", // Optional: Link to live demo (e.g., "https://mychatbot.example.com")
     githubLink: "https://github.com/yourusername/chatbot-project", // Optional
