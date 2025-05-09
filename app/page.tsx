@@ -5,7 +5,7 @@ import ExperienceItem from "./components/ExperienceItem"; // Import the componen
 import ProjectCard from "./components/ProjectCard";
 import Tilt from 'react-parallax-tilt'; 
 import { motion } from 'framer-motion'; // Add Framer Motion import
-import { LightBulbIcon } from "@heroicons/react/24/outline";
+import { LightBulbIcon, ChatBubbleLeftEllipsisIcon, EnvelopeIcon, } from "@heroicons/react/24/outline";
 
 type Experience = {
   date: string;
@@ -17,6 +17,7 @@ type Experience = {
   location: string;
   locationType: "office" | "remote";
 };
+
 
 const projectsData = [
   {
@@ -181,20 +182,28 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col mb-80"
+          className="flex flex-col"
         >
-          <div className="mb-5">
+          <div>
             <h2 className="text-2xl sm:text-2xl font-bold font-[family-name:var(--font-geist-sans)]">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
               01.
             </span>
             A Bit About{" "}
-            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic">
+            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
             Me
             </span>
-             
+            
             </h2>
-            <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div>
+            {/* <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div> */}
+            <div
+              className="
+                h-[1px] w-full opacity-70 mt-4 mb-8 sm:mb-8
+                bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
+                dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
+                animate-shimmer-line bg-[length:200%_100%]
+              "
+            ></div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-8 items-start">
@@ -260,7 +269,7 @@ export default function Home() {
         </motion.div>
 
         {/* Work Experience Section */}
-        <div className="flex flex-col gap-y-8 mb-50">
+        <div className="flex flex-col mt-100">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -274,13 +283,20 @@ export default function Home() {
               02.
             </span>
             Where I've{" "}
-            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic">
+            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
             Worked
             </span >
-             
-            </h2>
-            <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div>
             
+            </h2>
+            {/* <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div> */}
+            <div
+              className="
+                  h-[1px] w-full opacity-70 mt-4 mb-8 sm:mb-8
+                  bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
+                  dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
+                  animate-shimmer-line bg-[length:200%_100%]
+                "
+              ></div>
           </div>
           </motion.div>
 
@@ -303,17 +319,24 @@ export default function Home() {
 
         {/* My Project Section */}
 
-        <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
+        <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mt-100">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
               03.
             </span>
             What I've{" "}
-            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic">
+            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
             Built
             </span >
              
             </h2>
-            <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4 mb-6"></div>
+            <div
+              className="
+                h-[1px] w-full opacity-70 mt-4 mb-8 sm:mb-8
+                bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
+                dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
+                animate-shimmer-line bg-[length:200%_100%]
+              "
+            ></div>
 
         {/* Grid for Project Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
@@ -329,7 +352,180 @@ export default function Home() {
             />
           ))}
         </div>
+
+        {/* Contact me Section */}
+        
+        <motion.div
+        initial={{ opacity: 0, y: 30 }} // Slightly increased y for a bit more pop
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }} // Trigger when 30% is visible
+        transition={{ duration: 0.7, ease: "easeOut" }} // Slightly longer duration, easeOut
+        className="w-full mt-20 sm:mt-28" // Increased top margin
+      >
+        <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mt-100"> {/* Use flex for better alignment */}
+          <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
+            04. {/* Kept your original numbering style for now */}
+          </span>
+          Let's{" "}
+          <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1"> {/* Added ml-1 for slight separation */}
+            Connect
+          </span>
+        </h2>
+
+        {/* Animated Divider (from previous suggestion) */}
+        <div
+          className="
+            h-[1px] w-full opacity-70 mt-4 mb-8 sm:mb-8
+            bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
+            dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
+            animate-shimmer-line bg-[length:200%_100%]
+          "
+        ></div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
+          {/* --- Left Column: Info & Socials --- */}
+          <motion.div
+            initial={{ opacity: 0, x: -25 }} // Slightly increased x
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+            className="flex flex-col gap-5 sm:gap-6" // Increased gap
+          >
+            <p className="opacity-80 font-[family-name:var(--font-geist-sans)]">
+              I'm always open to discussing new projects, creative ideas, or opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+            </p>
+            {/* Social/Contact Links - Enhanced Styling */}
+            <div className="flex flex-col gap-4 mt-2 sm:mt-4">
+              {[
+                {
+                  href: "mailto:jerold.gomez@example.com", // <-- IMPORTANT: YOUR EMAIL
+                  icon: <EnvelopeIcon className="w-5 h-5" />,
+                  text: "jerold.gomez@example.com",
+                  label: "Email Jerold Gomez"
+                },
+                {
+                  href: "https://linkedin.com/in/yourusername", // <-- IMPORTANT: YOUR LINKEDIN
+                  icon: <Image src="/linkedin-logo.png" alt="LinkedIn" width={20} height={20} className="opacity-80 group-hover:opacity-100"/>,
+                  text: "linkedin.com/in/yourusername", // Or just "LinkedIn Profile"
+                  label: "Jerold Gomez on LinkedIn"
+                },
+                {
+                  href: "https://github.com/yourusername", // <-- IMPORTANT: YOUR GITHUB
+                  icon: <Image src="/github.png" alt="GitHub" width={20} height={20} className="opacity-80 group-hover:opacity-100"/>,
+                  text: "github.com/yourusername", // Or just "GitHub Profile"
+                  label: "Jerold Gomez on GitHub"
+                },
+              ].map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  target={link.href.startsWith('mailto:') ? '_self' : '_blank'}
+                  rel="noopener noreferrer"
+                  aria-label={link.label}
+                  className="
+                    group flex items-center gap-3 p-3 rounded-md
+                    font-[family-name:var(--font-geist-mono)] text-sm sm:text-base
+                    text-[color:var(--secondary-blue)]
+                    border border-transparent hover:border-neutral-700 dark:hover:border-neutral-600
+                    hover:bg-neutral-800/30 dark:hover:bg-neutral-900/40
+                    transition-all duration-200 ease-out
+                  "
+                >
+                  <span className="flex-shrink-0 text-[color:var(--primary-blue)] group-hover:scale-110 transition-transform">
+                    {link.icon}
+                  </span>
+                  <span className="truncate group-hover:text-white">{link.text}</span>
+                </a>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* --- Right Column: Contact Form --- */}
+          <motion.div
+            initial={{ opacity: 0, x: 25 }} // Slightly increased x
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+            className="bg-neutral-800/30 dark:bg-neutral-900/40 p-6 sm:p-8 rounded-xl border border-neutral-700/50 shadow-xl shadow-neutral-950/20" // Enhanced background and shadow
+          >
+            <h3 className="text-xl sm:text-xl font-semibold mb-5 sm:mb-6 font-[family-name:var(--font-geist-sans)]">
+              Send a Quick Message
+            </h3>
+            <form className="flex flex-col gap-5"> {/* Increased gap */}
+              <div>
+                <label htmlFor="name" className="block text-[14px] mb-1.5 font-medium opacity-70 font-[family-name:var(--font-geist-sans)]">
+                  Your Name:
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name" // Add name attribute for form submission
+                  className="w-full px-4 py-2.5 bg-neutral-900/60 dark:bg-black/30 border border-neutral-700/70 rounded-md focus:outline-none focus:border-[color:var(--primary-text-color)] focus:ring-1 focus:ring-[color:var(--primary-text-color)] transition-colors duration-200 text-white placeholder:text-neutral-500 font-[family-name:var(--font-geist-mono)]"
+                  placeholder="entry_name"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-[14px] mb-1.5 opacity-70 font-medium font-[family-name:var(--font-geist-sans)]">
+                  Your Email:
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="w-full px-4 py-2.5 bg-neutral-900/60 dark:bg-black/30 border border-neutral-700/70 rounded-md focus:outline-none focus:border-[color:var(--primary-text-color)] focus:ring-1 focus:ring-[color:var(--primary-text-color)] transition-colors duration-200 text-white placeholder:text-neutral-500 font-[family-name:var(--font-geist-mono)]"
+                  placeholder="user@domain.com"
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-[14px] opacity-70 mb-1.5 font-medium font-[family-name:var(--font-geist-sans)]">
+                  Your Message:
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={5} // Increased rows slightly
+                  className="w-full px-4 py-2.5 bg-neutral-900/60 dark:bg-black/30 border border-neutral-700/70 rounded-md focus:outline-none focus:border-[color:var(--primary-text-color)] focus:ring-1 focus:ring-[color:var(--primary-text-color)] transition-colors duration-200 text-white placeholder:text-neutral-500 font-[family-name:var(--font-geist-mono)] resize-none" // Added resize-none
+                  placeholder="compose_message_here..."
+                ></textarea>
+              </div>
+              <motion.button
+                whileHover={{ scale: 1.03, boxShadow: "0px 0px 15px rgba(0, 224, 255, 0.3)" }} // Added subtle glow
+                whileTap={{ scale: 0.97 }}
+                type="submit" // Specify button type
+                className="mt-2 px-6 py-3 bg-[color:var(--primary-text-color)] text-black font-semibold rounded-md hover:bg-opacity-80 active:bg-opacity-70 transition-all duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-900 focus:ring-[color:var(--primary-text-color)] font-[family-name:var(--font-geist-mono)] tracking-wider" // Added tracking
+              >
+                SEND_SIGNAL
+              </motion.button>
+            </form>
+          </motion.div>
+        </div>
+      </motion.div>
       </section>
+
+      {/* Footer Section */}
+      
+      <footer className="w-full py-10 px-4 relative z-20 mt-10">
+      {/* <div className="h-[1px] w-full bg-[#383838] opacity-40 mb-15"></div> */}
+        <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
+          {/* <div className="flex items-center gap-2 mb-2">
+            <span className="text-3xl sm:text-4xl font-[family-name:var(--font-playfair-display)] font-bold text-[color:var(--primary-text-color)]">Jerold Gomez</span>
+            
+          </div>
+          <nav className="flex flex-wrap justify-center gap-4 text-sm font-[family-name:var(--font-geist-sans)] mb-4 text-[color:var(--secondary-text-color)]">
+            <a href="#" className="hover:underline">Home</a>
+            <a href="#" className="hover:underline">Projects</a>
+            <a href="#" className="hover:underline">Experience</a>
+            <a href="#contact" className="hover:underline">Contact</a>
+          </nav> */}
+          <div className="h-[1px] w-16 bg-[#383838] opacity-40 my-4"></div>
+          <p className="text-[color:var(--secondary-text-color)] text-sm max-w-2xl mb-4 font-[family-name:var(--font-geist-sans)]">
+            Crafted with curiosity, late-night coffee, and a love for data. This portfolio is a reflection of my journey in tech, built with Next.js, Tailwind CSS, and a passion for learning. Thank you for visiting and supporting my growth!
+          </p>
+          <p className="text-xs text-[#929DA7] font-[family-name:var(--font-geist-mono)]">
+            © {new Date().getFullYear()} Jerold Gomez. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
