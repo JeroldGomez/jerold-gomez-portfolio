@@ -6,6 +6,7 @@ import ProjectCard from "./components/ProjectCard";
 import Tilt from 'react-parallax-tilt'; 
 import { motion } from 'framer-motion'; // Add Framer Motion import
 import { LightBulbIcon, ChatBubbleLeftEllipsisIcon, EnvelopeIcon, } from "@heroicons/react/24/outline";
+import CircleNavBar from "./components/CircleNavBar";
 
 type Experience = {
   date: string;
@@ -79,6 +80,7 @@ const workExperience: Experience[] = [
 export default function Home() {
   return (
     <div className="relative">
+      <CircleNavBar />
       {/* Introduction Section - Fixed height, centered */}
       <section className="
         h-screen
@@ -178,6 +180,7 @@ export default function Home() {
       ">
         {/* About me Section */}
         <motion.div 
+          id="about"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -185,7 +188,7 @@ export default function Home() {
           className="flex flex-col"
         >
           <div>
-            <h2 className="text-2xl sm:text-2xl font-bold font-[family-name:var(--font-geist-sans)]">
+            <h2 className="text-2xl sm:text-2xl font-bold font-[family-name:var(--font-geist-sans)] mb-5">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
               01.
             </span>
@@ -196,14 +199,15 @@ export default function Home() {
             
             </h2>
             {/* <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div> */}
-            <div
+            
+            {/* <div
               className="
                 h-[1px] w-full opacity-70 mt-4 mb-8 sm:mb-8
                 bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
                 dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
                 animate-shimmer-line bg-[length:200%_100%]
               "
-            ></div>
+            ></div> */}
           </div>
           
           <div className="flex flex-col sm:flex-row gap-8 items-start">
@@ -269,7 +273,7 @@ export default function Home() {
         </motion.div>
 
         {/* Work Experience Section */}
-        <div className="flex flex-col mt-100">
+        <div className="flex flex-col mt-100" id="experience">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -278,7 +282,7 @@ export default function Home() {
           >
 
           <div>
-            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
+            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
               02.
             </span>
@@ -289,14 +293,14 @@ export default function Home() {
             
             </h2>
             {/* <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div> */}
-            <div
+            {/* <div
               className="
                   h-[1px] w-full opacity-70 mt-4 mb-8 sm:mb-8
                   bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
                   dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
                   animate-shimmer-line bg-[length:200%_100%]
                 "
-              ></div>
+              ></div> */}
           </div>
           </motion.div>
 
@@ -319,24 +323,24 @@ export default function Home() {
 
         {/* My Project Section */}
 
-        <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mt-100">
-            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
-              03.
-            </span>
-            What I've{" "}
-            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
-            Built
-            </span >
+        <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mt-100 mb-5" id="projects">
+          <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
+            03.
+          </span>
+          What I've{" "}
+          <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
+          Built
+          </span >
              
-            </h2>
-            <div
+        </h2>
+            {/* <div
               className="
                 h-[1px] w-full opacity-70 mt-4 mb-8 sm:mb-8
                 bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
                 dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
                 animate-shimmer-line bg-[length:200%_100%]
               "
-            ></div>
+            ></div> */}
 
         {/* Grid for Project Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
@@ -356,13 +360,14 @@ export default function Home() {
         {/* Contact me Section */}
         
         <motion.div
+        id="contact"
         initial={{ opacity: 0, y: 30 }} // Slightly increased y for a bit more pop
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }} // Trigger when 30% is visible
         transition={{ duration: 0.7, ease: "easeOut" }} // Slightly longer duration, easeOut
         className="w-full mt-20 sm:mt-28" // Increased top margin
       >
-        <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mt-100"> {/* Use flex for better alignment */}
+        <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mt-100 mb-5"> {/* Use flex for better alignment */}
           <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
             04. {/* Kept your original numbering style for now */}
           </span>
@@ -373,14 +378,14 @@ export default function Home() {
         </h2>
 
         {/* Animated Divider (from previous suggestion) */}
-        <div
+        {/* <div
           className="
             h-[1px] w-full opacity-70 mt-4 mb-8 sm:mb-8
             bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
             dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
             animate-shimmer-line bg-[length:200%_100%]
           "
-        ></div>
+        ></div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
           {/* --- Left Column: Info & Socials --- */}
@@ -398,9 +403,9 @@ export default function Home() {
             <div className="flex flex-col gap-4 mt-2 sm:mt-4">
               {[
                 {
-                  href: "mailto:jerold.gomez@example.com", // <-- IMPORTANT: YOUR EMAIL
+                  href: "mailto:jeroldgomez345@gmail.com", // <-- IMPORTANT: YOUR EMAIL
                   icon: <EnvelopeIcon className="w-5 h-5" />,
-                  text: "jerold.gomez@example.com",
+                  text: "jeroldgomez345@gmail.com",
                   label: "Email Jerold Gomez"
                 },
                 {
@@ -442,16 +447,17 @@ export default function Home() {
 
           {/* --- Right Column: Contact Form --- */}
           <motion.div
-            initial={{ opacity: 0, x: 25 }} // Slightly increased x
+            initial={{ opacity: 0, x: 25 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
-            className="bg-neutral-800/30 dark:bg-neutral-900/40 p-6 sm:p-8 rounded-xl border border-neutral-700/50 shadow-xl shadow-neutral-950/20" // Enhanced background and shadow
+            className="p-6 rounded-xl bg-neutral-800/30 backdrop-blur-sm border border-neutral-700/50 hover:border-neutral-600/70 transition-all duration-300 hover:shadow-lg hover:shadow-neutral-900/20"
           >
-            <h3 className="text-xl sm:text-xl font-semibold mb-5 sm:mb-6 font-[family-name:var(--font-geist-sans)]">
+            <h3 className="text-xl sm:text-xl font-semibold mb-5 sm:mb-3 font-[family-name:var(--font-geist-sans)] text-[color:var(--primary-blue)]">
               Send a Quick Message
             </h3>
-            <form className="flex flex-col gap-5"> {/* Increased gap */}
+            <div className="h-[1px] w-full bg-[#383838] opacity-50"></div>
+            <form className="flex flex-col gap-5 mt-4">
               <div>
                 <label htmlFor="name" className="block text-[14px] mb-1.5 font-medium opacity-70 font-[family-name:var(--font-geist-sans)]">
                   Your Name:
@@ -459,8 +465,8 @@ export default function Home() {
                 <input
                   type="text"
                   id="name"
-                  name="name" // Add name attribute for form submission
-                  className="w-full px-4 py-2.5 bg-neutral-900/60 dark:bg-black/30 border border-neutral-700/70 rounded-md focus:outline-none focus:border-[color:var(--primary-text-color)] focus:ring-1 focus:ring-[color:var(--primary-text-color)] transition-colors duration-200 text-white placeholder:text-neutral-500 font-[family-name:var(--font-geist-mono)]"
+                  name="name"
+                  className="w-full px-4 py-2.5 bg-neutral-900/60 dark:bg-black/30 border border-neutral-700/70 rounded-md focus:outline-none focus:border-[color:var(--primary-blue)] focus:ring-1 focus:ring-[color:var(--primary-blue)] transition-colors duration-200 text-white placeholder:text-neutral-500 font-[family-name:var(--font-geist-mono)]"
                   placeholder="entry_name"
                 />
               </div>
@@ -472,7 +478,7 @@ export default function Home() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-2.5 bg-neutral-900/60 dark:bg-black/30 border border-neutral-700/70 rounded-md focus:outline-none focus:border-[color:var(--primary-text-color)] focus:ring-1 focus:ring-[color:var(--primary-text-color)] transition-colors duration-200 text-white placeholder:text-neutral-500 font-[family-name:var(--font-geist-mono)]"
+                  className="w-full px-4 py-2.5 bg-neutral-900/60 dark:bg-black/30 border border-neutral-700/70 rounded-md focus:outline-none focus:border-[color:var(--primary-blue)] focus:ring-1 focus:ring-[color:var(--primary-blue)] transition-colors duration-200 text-white placeholder:text-neutral-500 font-[family-name:var(--font-geist-mono)]"
                   placeholder="user@domain.com"
                 />
               </div>
@@ -483,18 +489,19 @@ export default function Home() {
                 <textarea
                   id="message"
                   name="message"
-                  rows={5} // Increased rows slightly
-                  className="w-full px-4 py-2.5 bg-neutral-900/60 dark:bg-black/30 border border-neutral-700/70 rounded-md focus:outline-none focus:border-[color:var(--primary-text-color)] focus:ring-1 focus:ring-[color:var(--primary-text-color)] transition-colors duration-200 text-white placeholder:text-neutral-500 font-[family-name:var(--font-geist-mono)] resize-none" // Added resize-none
+                  rows={5}
+                  className="w-full px-4 py-2.5 bg-neutral-900/60 dark:bg-black/30 border border-neutral-700/70 rounded-md focus:outline-none focus:border-[color:var(--primary-blue)] focus:ring-1 focus:ring-[color:var(--primary-blue)] transition-colors duration-200 text-white placeholder:text-neutral-500 font-[family-name:var(--font-geist-mono)] resize-none"
                   placeholder="compose_message_here..."
                 ></textarea>
               </div>
               <motion.button
-                whileHover={{ scale: 1.03, boxShadow: "0px 0px 15px rgba(0, 224, 255, 0.3)" }} // Added subtle glow
+                whileHover={{ boxShadow: "0px 0px 15px rgba(48, 48, 48, 0.3)" }}
                 whileTap={{ scale: 0.97 }}
-                type="submit" // Specify button type
-                className="mt-2 px-6 py-3 bg-[color:var(--primary-text-color)] text-black font-semibold rounded-md hover:bg-opacity-80 active:bg-opacity-70 transition-all duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-900 focus:ring-[color:var(--primary-text-color)] font-[family-name:var(--font-geist-mono)] tracking-wider" // Added tracking
+                type="submit"
+                className="font-[family-name:var(--font-geist-sans)] rounded-lg border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
               >
-                SEND_SIGNAL
+                <Image src="/mail.png" alt="Vercel logomark" width={20} height={20} />
+                Send Email
               </motion.button>
             </form>
           </motion.div>
@@ -517,9 +524,9 @@ export default function Home() {
             <a href="#" className="hover:underline">Experience</a>
             <a href="#contact" className="hover:underline">Contact</a>
           </nav> */}
-          <div className="h-[1px] w-16 bg-[#383838] opacity-40 my-4"></div>
+          <div className="h-[1px] w-full bg-[#383838] opacity-50 my-4"></div>
           <p className="text-[color:var(--secondary-text-color)] text-sm max-w-2xl mb-4 font-[family-name:var(--font-geist-sans)]">
-            Crafted with curiosity, late-night coffee, and a love for data. This portfolio is a reflection of my journey in tech, built with Next.js, Tailwind CSS, and a passion for learning. Thank you for visiting and supporting my growth!
+            Crafted with curiosity, late-night coffee, and a love for data. This portfolio is built with Next.js, Tailwind CSS, and a passion for learning. Thank you for visiting!
           </p>
           <p className="text-xs text-[#929DA7] font-[family-name:var(--font-geist-mono)]">
             © {new Date().getFullYear()} Jerold Gomez. All rights reserved.
