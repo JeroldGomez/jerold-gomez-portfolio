@@ -322,40 +322,50 @@ export default function Home() {
         </div>
 
         {/* My Project Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mt-100 mb-5" id="projects">
+            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
+              03.
+            </span>
+            What I've{" "}
+            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
+            Built
+            </span>
+          </h2>
 
-        <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mt-100 mb-5" id="projects">
-          <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
-            03.
-          </span>
-          What I've{" "}
-          <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
-          Built
-          </span >
-             
-        </h2>
-            {/* <div
-              className="
-                h-[1px] w-full opacity-70 mt-4 mb-8 sm:mb-8
-                bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
-                dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
-                animate-shimmer-line bg-[length:200%_100%]
-              "
-            ></div> */}
-
-        {/* Grid for Project Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-          {projectsData.map((project, index) => (
-            <ProjectCard
-              key={index} // Ideally use a unique project ID if available
-              title={project.title}
-              imageUrl={project.imageUrl}
-              description={project.description}
-              technologies={project.technologies}
-              liveLink={project.liveLink}
-              githubLink={project.githubLink}
-            />
-          ))}
-        </div>
+          {/* Grid for Project Cards */}
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            {projectsData.map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 + (index * 0.1) }}
+              >
+                <ProjectCard
+                  title={project.title}
+                  imageUrl={project.imageUrl}
+                  description={project.description}
+                  technologies={project.technologies}
+                  liveLink={project.liveLink}
+                  githubLink={project.githubLink}
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
 
         {/* Contact me Section */}
         
