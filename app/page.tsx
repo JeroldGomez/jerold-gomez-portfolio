@@ -25,7 +25,7 @@ const projectsData = [
     title: "AI-Powered Student Chatbot",
     imageUrl: "/login.png", // <-- Replace with your actual image path
     description:
-      "Developed an intelligent chatbot using OpenAI, Firebase, and Node.js to assist university students with general inquiries, streamlining support and improving response times. Developed an intelligent chatbot using OpenAI, Firebase, and Node.js to assist university students with general inquiries, streamlining support and improving response times.",
+      "Developed an intelligent chatbot using OpenAI, Firebase, and Node.js to assist university students with general inquiries, streamlining support and improving response times.",
     technologies: ["OpenAI API", "Node.js", "Firebase", "React", "NLP"],
     liveLink: "#", // Optional: Link to live demo (e.g., "https://mychatbot.example.com")
     githubLink: "https://github.com/yourusername/chatbot-project", // Optional
@@ -38,6 +38,15 @@ const projectsData = [
     technologies: ["Python (Pandas, Plotly)", "SQL", "Tableau", "React"],
     liveLink: null, // No live link for this one
     githubLink: "https://github.com/yourusername/ecommerce-dashboard",
+  },
+  {
+    title: "Personal Portfolio Website",
+    imageUrl: "/projects/portfolio-mockup.png", // <-- Replace
+    description:
+      "This very portfolio! Built with Next.js, Tailwind CSS, and showcasing a blend of data science projects and my journey in tech. Features an animated ASCII background.",
+    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Canvas API"],
+    liveLink: "/", // Link to the current site
+    githubLink: "https://github.com/yourusername/my-portfolio",
   },
   {
     title: "Personal Portfolio Website",
@@ -419,15 +428,21 @@ export default function Home() {
                   label: "Email Jerold Gomez"
                 },
                 {
-                  href: "https://linkedin.com/in/yourusername", // <-- IMPORTANT: YOUR LINKEDIN
+                  href: "https://www.linkedin.com/in/jeroldgomez/", // <-- IMPORTANT: YOUR LINKEDIN
                   icon: <Image src="/linkedin-logo.png" alt="LinkedIn" width={20} height={20} className="opacity-80 group-hover:opacity-100"/>,
-                  text: "linkedin.com/in/yourusername", // Or just "LinkedIn Profile"
+                  text: "linkedin.com/in/jeroldgomez", // Or just "LinkedIn Profile"
                   label: "Jerold Gomez on LinkedIn"
                 },
                 {
-                  href: "https://github.com/yourusername", // <-- IMPORTANT: YOUR GITHUB
+                  href: "https://github.com/JeroldGomez", // <-- IMPORTANT: YOUR GITHUB
                   icon: <Image src="/github.png" alt="GitHub" width={20} height={20} className="opacity-80 group-hover:opacity-100"/>,
-                  text: "github.com/yourusername", // Or just "GitHub Profile"
+                  text: "github.com/JeroldGomez", // Or just "GitHub Profile"
+                  label: "Jerold Gomez on GitHub"
+                },
+                {
+                  href: "https://www.facebook.com/JeroldGomezzz", // <-- IMPORTANT: YOUR GITHUB
+                  icon: <Image src="/facebook.png" alt="GitHub" width={20} height={20} className="opacity-80 group-hover:opacity-100"/>,
+                  text: "facebook.com/JeroldGomezzz", // Or just "GitHub Profile"
                   label: "Jerold Gomez on GitHub"
                 },
               ].map((link, index) => (
@@ -456,13 +471,20 @@ export default function Home() {
           </motion.div>
 
           {/* --- Right Column: Contact Form --- */}
+
+          
           <motion.div
             initial={{ opacity: 0, x: 25 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ 
+              duration: 0.8,
+              delay: 0.4,
+              ease: [0.25, 0.1, 0.25, 1] // Custom easing for smoother motion
+            }}
             className="p-6 rounded-xl bg-neutral-800/30 backdrop-blur-sm border border-neutral-700/50 hover:border-neutral-600/70 transition-all duration-300 hover:shadow-lg hover:shadow-neutral-900/20"
           >
+            
             <h3 className="text-xl sm:text-xl font-semibold mb-5 sm:mb-3 font-[family-name:var(--font-geist-sans)] text-[color:var(--primary-blue)]">
               Send a Quick Message
             </h3>
@@ -515,6 +537,9 @@ export default function Home() {
               </motion.button>
             </form>
           </motion.div>
+          
+
+          
         </div>
       </motion.div>
       </section>
