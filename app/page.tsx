@@ -513,19 +513,17 @@ export default function Home() {
       
       <footer className="w-full py-10 px-4 mb-22 relative z-20">
         <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
-          {/* <div className="flex items-center gap-2 mb-2">
-            <span className="text-3xl sm:text-4xl font-[family-name:var(--font-playfair-display)] font-bold text-[color:var(--primary-text-color)]">Jerold Gomez</span>
+          <div className="h-[1px] w-full bg-[#383838] opacity-50 my-10"></div>
+          <p className="font-normal text-sm max-w-2xl mb-4 font-[family-name:var(--font-geist-sans)] text-[#929DA7]">
+          Built with{" "}
+            <span className="font-normal font-[family-name:var(--font-geist-sans)] text-[#fff]">
+            Next.js, Tailwind CSS{" "}
+            </span>
+            , and a foundation of late-night coffee and curiosity. This space showcases a passion for data and a continuous journey of learning and creating.{" "}
+            <span className="font-normal font-[family-name:var(--font-geist-sans)] text-[#fff]">
+            Thank you for visiting!
+            </span>
             
-          </div>
-          <nav className="flex flex-wrap justify-center gap-4 text-sm font-[family-name:var(--font-geist-sans)] mb-4 text-[color:var(--secondary-text-color)]">
-            <a href="#" className="hover:underline">Home</a>
-            <a href="#" className="hover:underline">Projects</a>
-            <a href="#" className="hover:underline">Experience</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-          </nav> */}
-          <div className="h-[1px] w-full bg-[#383838] opacity-50 my-4"></div>
-          <p className="text-[color:var(--secondary-text-color)] text-sm max-w-2xl mb-4 font-[family-name:var(--font-geist-sans)]">
-            Crafted with curiosity, late-night coffee, and a love for data. This portfolio is built with Next.js, Tailwind CSS, and a passion for learning. Thank you for visiting!
           </p>
           <p className="text-xs text-[#929DA7] font-[family-name:var(--font-geist-mono)]">
             © {new Date().getFullYear()} Jerold Gomez. All rights reserved.
