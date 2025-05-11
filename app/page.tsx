@@ -511,8 +511,7 @@ export default function Home() {
 
       {/* Footer Section */}
       
-      <footer className="w-full py-10 px-4 relative z-20 mt-10">
-      {/* <div className="h-[1px] w-full bg-[#383838] opacity-40 mb-15"></div> */}
+      <footer className="w-full py-10 px-4 mb-22 relative z-20">
         <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
           {/* <div className="flex items-center gap-2 mb-2">
             <span className="text-3xl sm:text-4xl font-[family-name:var(--font-playfair-display)] font-bold text-[color:var(--primary-text-color)]">Jerold Gomez</span>
