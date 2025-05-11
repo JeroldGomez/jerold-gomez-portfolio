@@ -399,7 +399,7 @@ export default function Home() {
         {/* Animated Divider (from previous suggestion) */}
         {/* <div
           className="
-            h-[1px] w-full opacity-70 mt-4 mb-8 sm:mb-8
+            h-[1px] w-full opacity-60 mt-4 mb-8 sm:mb-8
             bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
             dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
             animate-shimmer-line bg-[length:200%_100%]
@@ -548,7 +548,15 @@ export default function Home() {
       
       <footer className="w-full py-10 px-4 mb-22 relative z-20">
         <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
-          <div className="h-[1px] w-full bg-[#383838] opacity-50 my-10"></div>
+          {/* <div className="h-[1px] w-full bg-[#383838] opacity-50 my-10"></div> */}
+          <div
+          className="
+            h-[1px] w-full opacity-60 my-10
+            bg-[linear-gradient(to_right,theme(colors.neutral.700)_20%,theme(colors.neutral.100)_50%,theme(colors.neutral.700)_80%)]
+            dark:bg-[linear-gradient(to_right,theme(colors.neutral.800)_20%,theme(colors.neutral.400)_50%,theme(colors.neutral.800)_80%)]
+            animate-shimmer-line bg-[length:200%_100%]
+          "
+        ></div>
           <p className="font-normal text-sm max-w-2xl mb-4 font-[family-name:var(--font-geist-sans)] text-[#929DA7]">
           Built with{" "}
             <span className="font-normal font-[family-name:var(--font-geist-sans)] text-[#fff]">
