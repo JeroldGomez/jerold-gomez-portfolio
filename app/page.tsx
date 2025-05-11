@@ -88,7 +88,7 @@ const workExperience: Experience[] = [
 
 export default function Home() {
   return (
-    <div id="home" className="relative">
+    <div className="relative">
       <CircleNavBar />
       {/* Introduction Section - Fixed height, centered */}
       
@@ -109,7 +109,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          
+          id="home"
           className="text-sm font-light leading-relaxed font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-text-color)]"
         >
           Hi, my name is <br /><br />

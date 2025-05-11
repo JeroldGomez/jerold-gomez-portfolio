@@ -51,7 +51,15 @@ export default function CircleNavBar() {
             aria-label={item.label}
             onClick={() => {
               const el = document.getElementById(item.id);
-              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              if (el) {
+                const rect = el.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const targetPosition = rect.top + scrollTop - (window.innerHeight / 2) + (rect.height / 2);
+                window.scrollTo({
+                  top: targetPosition,
+                  behavior: 'smooth'
+                });
+              }
             }}
             className="group flex items-center justify-center w-12 h-12 rounded-full border border-neutral-700/40 bg-neutral-800/40 hover:bg-neutral-700/60 hover:-translate-y-1.5 transition-all duration-250 ease-out focus:outline-none focus:ring-1 focus:ring-[#737373] mx-1"
           >
