@@ -10,16 +10,16 @@ import CircleNavBar from "./components/CircleNavBar";
 import { projectsData } from './data/projects';
 import { workExperience } from './data/experience';
 
-type Experience = {
-  date: string;
-  logo: string;
-  alt: string;
-  title: string;
-  companyLink: string;
-  description: string;
-  location: string;
-  locationType: "office" | "remote";
-};
+// type Experience = {
+//   date: string;
+//   logo: string;
+//   alt: string;
+//   title: string;
+//   companyLink: string;
+//   description: string;
+//   location: string;
+//   locationType: "office" | "remote";
+// };
 
 export default function Home() {
   return (

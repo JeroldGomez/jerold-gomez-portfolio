@@ -98,9 +98,11 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                         </div>
 
                         {/* Description */}
-                        <p className="text-sm leading-relaxed text-[color:var(--foreground)] opacity-90 font-[family-name:var(--font-geist-sans)]">
-                            {description}
-                        </p>
+                        <div className="text-sm leading-relaxed text-[color:var(--foreground)] opacity-90 font-[family-name:var(--font-geist-sans)] space-y-2">
+                            {description.split('\n\n').map((paragraph, index) => (
+                                <p key={index}>{paragraph.trim()}</p>
+                            ))}
+                        </div>
 
                         {/* Location Tag */}
                         <div className="flex items-center gap-2 mt-4 font-[family-name:var(--font-geist-sans)]">
