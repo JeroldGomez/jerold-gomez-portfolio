@@ -435,7 +435,7 @@ export default function Home() {
               {[
                 {
                   href: "mailto:jeroldgomez345@gmail.com", // <-- IMPORTANT: YOUR EMAIL
-                  icon: <EnvelopeIcon className="w-5 h-5" />,
+                  icon: <Image src="/email-w.png" alt="LinkedIn" width={20} height={20} className="opacity-80 group-hover:opacity-100"/>,
                   text: "jeroldgomez345@gmail.com",
                   label: "Email Jerold Gomez"
                 },
@@ -574,7 +574,7 @@ export default function Home() {
             <span className="font-normal font-[family-name:var(--font-geist-sans)] text-[#fff]">
             Next.js, Tailwind CSS{" "}
             </span>
-            , and a foundation of late-night coffee and curiosity. This space showcases a passion for data and a continuous journey of learning and creating.{" "}
+            , and a foundation of late-night coffee and curiosity. This space showcases a passion for data, and a continuous journey of learning and creating in the applications of AI.{" "}
             <span className="font-normal font-[family-name:var(--font-geist-sans)] text-[#fff]">
             Thank you for visiting!
             </span>

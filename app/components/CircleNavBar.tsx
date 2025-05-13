@@ -42,7 +42,7 @@ export default function CircleNavBar() {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 120, damping: 20, delay: 0.5 }}
-        className="flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-full border border-neutral-700/50 bg-neutral-900/70 backdrop-blur-lg shadow-xl shadow-black/30"
+        className="flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-full border border-neutral-700/50 bg-neutral-900/50  backdrop-blur-lg shadow-xl shadow-black/30"
         // className="flex items-center gap-2 px-4 py-2 rounded-full border border-neutral-700/60 bg-neutral-900/80 backdrop-blur-md shadow-lg"
       >
         {navItems.map((item, idx) => (
