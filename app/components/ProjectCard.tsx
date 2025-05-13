@@ -66,7 +66,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         {technologies.map((tech) => (
                         <span
                             key={tech}
-                            className="text-xs font-[family-name:var(--font-geist-mono)] bg-cyan-900/30 text-cyan-300 px-2.5 py-1 rounded-full border border-cyan-700/30 hover:bg-cyan-900/50 hover:border-cyan-700/50 transition-all duration-300"
+                            className="text-xs font-[family-name:var(--font-geist-mono)] bg-cyan-900/30 text-cyan-300 px-2.5 py-1 rounded-lg border border-cyan-700/30 hover:bg-cyan-900/50 hover:border-cyan-700/50 transition-all duration-300"
                         >
                             {tech}
                         </span>

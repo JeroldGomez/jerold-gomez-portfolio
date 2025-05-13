@@ -7,6 +7,8 @@ import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion'; // Add Framer Motion import
 import { LightBulbIcon, ChatBubbleLeftEllipsisIcon, EnvelopeIcon, } from "@heroicons/react/24/outline";
 import CircleNavBar from "./components/CircleNavBar";
+import { projectsData } from './data/projects';
+import { workExperience } from './data/experience';
 
 type Experience = {
   date: string;
@@ -18,73 +20,6 @@ type Experience = {
   location: string;
   locationType: "office" | "remote";
 };
-
-
-const projectsData = [
-  {
-    title: "AI-Powered Student Chatbot",
-    imageUrl: "/login.png", // <-- Replace with your actual image path
-    description:
-      "Developed an intelligent chatbot using OpenAI, Firebase, and Node.js to assist university students with general inquiries, streamlining support and improving response times.",
-    technologies: ["OpenAI API", "Node.js", "Firebase", "React", "NLP"],
-    liveLink: "#", // Optional: Link to live demo (e.g., "https://mychatbot.example.com")
-    githubLink: "https://github.com/yourusername/chatbot-project", // Optional
-  },
-  {
-    title: "E-commerce Analytics Dashboard",
-    imageUrl: "/projects/dashboard-mockup.png", // <-- Replace
-    description:
-      "Designed and built an interactive dashboard for an e-commerce client to visualize sales trends, customer behavior, and inventory levels, enabling data-driven decision-making.",
-    technologies: ["Python (Pandas, Plotly)", "SQL", "Tableau", "React"],
-    liveLink: null, // No live link for this one
-    githubLink: "https://github.com/yourusername/ecommerce-dashboard",
-  },
-  {
-    title: "Personal Portfolio Website",
-    imageUrl: "/projects/portfolio-mockup.png", // <-- Replace
-    description:
-      "This very portfolio! Built with Next.js, Tailwind CSS, and showcasing a blend of data science projects and my journey in tech. Features an animated ASCII background.",
-    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Canvas API"],
-    liveLink: "/", // Link to the current site
-    githubLink: "https://github.com/yourusername/my-portfolio",
-  },
-  {
-    title: "Personal Portfolio Website",
-    imageUrl: "/projects/portfolio-mockup.png", // <-- Replace
-    description:
-      "This very portfolio! Built with Next.js, Tailwind CSS, and showcasing a blend of data science projects and my journey in tech. Features an animated ASCII background.",
-    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Canvas API"],
-    liveLink: "/", // Link to the current site
-    githubLink: "https://github.com/yourusername/my-portfolio",
-  },
-  // Add more project objects here...
-];
-
-const workExperience: Experience[] = [
-  {
-    date: "Aug - Sep, 2024",
-    logo: "/cct_logo_t_main.svg", // <-- Replace with your actual logo path
-    alt: "Company A Logo",
-    title: "Data Analyst Intern · CCT",
-    companyLink: "https://example.com/companya", // <-- Replace with actual link
-    description:
-      "Developed predictive models for customer churn, resulting in a 15% reduction. Built data pipelines using Python and Airflow to automate reporting processes, saving hundreds of hours.",
-    location: "Tagaytay City, Cavite",
-    locationType: "office", // 'office' or 'remote'
-  },
-  {
-    date: "2023 - 2024",
-    logo: "/cct_logo_t_main.svg", // <-- Replace with your actual logo path
-    alt: "University Logo",
-    title: "Junior IT Analyst · CCT",
-    companyLink: "https://example.edu/ai-lab", // <-- Replace with actual link
-    description:
-      "Assisted senior researchers with data collection, cleaning, and analysis for machine learning projects. Co-authored a paper on natural language processing techniques presented at a regional conference.",
-    location: "Remote",
-    locationType: "remote",
-  },
-  // Add more experience objects here...
-];
 
 export default function Home() {
   return (
