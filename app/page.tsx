@@ -6,20 +6,10 @@ import ProjectCard from "./components/ProjectCard";
 import Tilt from 'react-parallax-tilt'; 
 import { motion } from 'framer-motion'; // Add Framer Motion import
 import { LightBulbIcon, ChatBubbleLeftEllipsisIcon, EnvelopeIcon, } from "@heroicons/react/24/outline";
+import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 import CircleNavBar from "./components/CircleNavBar";
 import { projectsData } from './data/projects';
 import { workExperience } from './data/experience';
-
-// type Experience = {
-//   date: string;
-//   logo: string;
-//   alt: string;
-//   title: string;
-//   companyLink: string;
-//   description: string;
-//   location: string;
-//   locationType: "office" | "remote";
-// };
 
 export default function Home() {
   return (
@@ -281,15 +271,26 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5" id="projects">
-            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
-              03.
-            </span>
-            What I've{" "}
-            <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
-            Built
-            </span>
-          </h2>
+          <div className="flex items-center justify-between mb-5 " id="projects">
+            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
+              <span className="text-[13px] font-light font-[family-name:var(--font-geist-mono)] mr-2">
+                03.
+              </span>
+              What I've Built{" "}
+              <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
+                {/* Built */}
+              </span>
+            </h2>
+            <a
+              href="https://github.com/JeroldGomez"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group transition-all duration-200 hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
+            >
+              See more on GitHub
+              <ArrowUpRightIcon className="w-4 h-4 ml-1 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
+          </div>
 
           {/* Grid for Project Cards */}
           <motion.div 

@@ -37,7 +37,7 @@ const playfairDisplay = Playfair_Display({
 // });
 
 export const metadata: Metadata = {
-  title: "Jerold Gomez | Portfolio",
+  title: "Jerold Gomez",
   description: "Data science enthusiast transforming data into meaningful stories.",
 };
 

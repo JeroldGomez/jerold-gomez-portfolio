@@ -51,18 +51,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             <div className="p-6 rounded-xl bg-neutral-800/30 backdrop-blur-sm border border-neutral-700/50 hover:border-neutral-600/70 transition-all duration-300 hover:shadow-lg hover:shadow-neutral-900/20">
                 <div className="grid grid-cols-[auto_1fr] gap-4 items-start">
                     {/* Logo */}
-                    <Tilt
-                            className="tilt-container overflow-hidden rounded-lg"
-                            perspective={1000} // Adjust perspective
-                            glareEnable={true} // Add a glare effect
-                            glareMaxOpacity={0.1} // Glare opacity
-                            glarePosition="all"
-                            scale={1.02} // Slight scale on hover
-                            tiltMaxAngleX={15} // Max tilt on X axis
-                            tiltMaxAngleY={15} // Max tilt on Y axis
-                            transitionSpeed={1000} // Speed of tilt returning to normal
-                            // gyroscope={true} 
-                        >
+                    
                     <div className="h-12 w-12 rounded-md bg-neutral-800/50 border border-neutral-700/50 flex items-center justify-center transition-transform duration-300">
                         <Image
                             src={logo}
@@ -71,7 +60,6 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                             height={30}
                         />  
                     </div>
-                    </Tilt>
 
                     {/* Content */}
                     <div className="space-y-2">
