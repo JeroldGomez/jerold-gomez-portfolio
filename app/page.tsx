@@ -123,13 +123,13 @@ export default function Home() {
           className="flex flex-col"
         >
           <div>
-            <h2 className="text-2xl sm:text-2xl font-bold font-[family-name:var(--font-geist-sans)] mb-5">
-            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
+            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5 text-[#fff]">
+            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 text-[#929DA7]">
               01.
             </span>
-            A Bit About{" "}
+            A Bit About Me{" "}
             <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
-            Me
+            {/* Me */}
             </span>
             
             </h2>
@@ -221,13 +221,13 @@ export default function Home() {
           >
 
           <div>
-            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5">
-            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
+            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5 text-[#929DA7]">
+            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 text-[#fff]">
               02.
             </span>
-            Where I've{" "}
+            Where I've Worked{" "}
             <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
-            Worked
+            {/* Worked */}
             </span >
             
             </h2>
