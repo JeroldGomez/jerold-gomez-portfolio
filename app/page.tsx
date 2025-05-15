@@ -122,8 +122,8 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="flex flex-col"
         >
-          <div>
-            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5 text-[#fff]">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-5 gap-2 md:gap-0">
+            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] text-[#fff]">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
               01.
             </span>
@@ -133,6 +133,15 @@ export default function Home() {
             </span>
             
             </h2>
+            <a
+              href="https://github.com/JeroldGomez"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group transition-all duration-200 hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
+            >
+              More About me
+              <ArrowUpRightIcon className="w-4 h-4 ml-1 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
             {/* <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div> */}
             
             {/* <div
