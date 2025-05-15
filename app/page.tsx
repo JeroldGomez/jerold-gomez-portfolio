@@ -124,7 +124,7 @@ export default function Home() {
         >
           <div>
             <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5 text-[#fff]">
-            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 text-[#929DA7]">
+            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
               01.
             </span>
             A Bit About Me{" "}
@@ -157,11 +157,11 @@ export default function Home() {
                 className="tilt-container overflow-hidden rounded-lg"
                 perspective={1000}
                 glareEnable={true}
-                glareMaxOpacity={0.3}
+                glareMaxOpacity={0.1}
                 glarePosition="all"
                 scale={1.02}
-                tiltMaxAngleX={15}
-                tiltMaxAngleY={15}
+                tiltMaxAngleX={5}
+                tiltMaxAngleY={5}
                 transitionSpeed={1000}
               >
                 <div className="tilt-inner bg-neutral-800/50 p-1 rounded-lg">
@@ -220,9 +220,9 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
 
-          <div>
-            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5 text-[#929DA7]">
-            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 text-[#fff]">
+          <div className="flex items-center justify-between mb-5">
+            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5">
+            <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
               02.
             </span>
             Where I've Worked{" "}
@@ -231,6 +231,16 @@ export default function Home() {
             </span >
             
             </h2>
+            <a
+              href="https://github.com/JeroldGomez"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group transition-all duration-200 hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
+            >
+              View Resume
+              <ArrowUpRightIcon className="w-4 h-4 ml-1 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
+            
             {/* <div className="h-[1px] w-full bg-[#383838] opacity-60 mt-4"></div> */}
             {/* <div
               className="
@@ -273,7 +283,7 @@ export default function Home() {
         >
           <div className="flex items-center justify-between mb-5 " id="projects">
             <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
-              <span className="text-[13px] font-light font-[family-name:var(--font-geist-mono)] mr-2">
+              <span className="text-[13px] font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
                 03.
               </span>
               What I've Built{" "}
@@ -335,12 +345,12 @@ export default function Home() {
         className="w-full mt-20 sm:mt-28" // Increased top margin
       >
         <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5"> {/* Use flex for better alignment */}
-          <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2">
+          <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
             04. {/* Kept your original numbering style for now */}
           </span>
-          Let's{" "}
+          Let's Connect{" "}
           <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1"> {/* Added ml-1 for slight separation */}
-            Connect
+            {/* Connect */}
           </span>
         </h2>
 
@@ -363,7 +373,7 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
             className="flex flex-col gap-5 sm:gap-6" // Increased gap
           >
-            <p className="opacity-80 font-[family-name:var(--font-geist-sans)]">
+            <p className="opacity-80 font-[family-name:var(--font-geist-sans)] font-light">
               I'm always open to discussing new projects, creative ideas, or opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!
             </p>
             {/* Social/Contact Links - Enhanced Styling */}
@@ -433,7 +443,7 @@ export default function Home() {
             className="p-6 rounded-xl bg-neutral-800/30 backdrop-blur-sm border border-neutral-700/50 hover:border-neutral-600/70 transition-all duration-300 hover:shadow-lg hover:shadow-neutral-900/20"
           >
             
-            <h3 className="text-xl sm:text-xl font-semibold mb-5 sm:mb-3 font-[family-name:var(--font-geist-sans)] text-[color:var(--primary-blue)]">
+            <h3 className="text-xl sm:text-lg font-normal mb-5 sm:mb-3 font-[family-name:var(--font-geist-sans)] text-[color:var(--primary-blue)]">
               Send a Quick Message
             </h3>
             <div className="h-[1px] w-full bg-[#383838] opacity-50"></div>
