@@ -220,8 +220,8 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
 
-          <div className="flex items-center justify-between mb-5">
-            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-5 gap-2 md:gap-0">
+            <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
             <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
               02.
             </span>
@@ -281,7 +281,7 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex items-center justify-between mb-5 " id="projects">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-5 gap-2 md:gap-0">
             <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
               <span className="text-[13px] font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
                 03.
