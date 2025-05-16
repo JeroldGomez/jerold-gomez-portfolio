@@ -536,7 +536,7 @@ export default function Home() {
             
           </p>
           <p className="text-xs text-[#929DA7] font-[family-name:var(--font-geist-mono)]">
-            © {new Date().getFullYear()} Jerold Gomez. All rights reserved.
+            © {new Date().getFullYear()} Jerold Gomez.
           </p>
         </div>
       </footer>
