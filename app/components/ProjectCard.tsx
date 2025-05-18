@@ -25,20 +25,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     githubLink,
 }) => {
     const cardContent = (
-        <Tilt
-            className="tilt-container overflow-hidden rounded-lg"
-            perspective={1000} // Adjust perspective
-            glareEnable={true} // Add a glare effect
-            glareMaxOpacity={0.06} // Glare opacity
-            glarePosition="all"
-            scale={1.02} // Slight scale on hover
-            tiltMaxAngleX={2} // Max tilt on X axis
-            tiltMaxAngleY={2} // Max tilt on Y axis
-            transitionSpeed={1000} 
-        >
-            <div className="p-5 sm:p-6 rounded-xl bg-neutral-800/40 backdrop-blur-md border border-neutral-700/60 hover:border-white/30 transition-all duration-300 hover:shadow-xl hover:shadow-neutral-900/30 flex flex-col h-full group/card">
+
+            <div className="p-5 sm:p-6 rounded-xl bg-neutral-800/40 backdrop-blur-md border border-neutral-700/60 hover:border-white/30 transition-all duration-300 hover:shadow-xl hover:shadow-neutral-900/30 flex flex-col h-full group/card transform hover:scale-[1.01] transition-transform duration-300">
                 <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden mb-4 border border-neutral-700/50 group-hover/card:border-white/30 transition-colors duration-300">
-                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/50 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/50 to-transparent opacity-0 transition-opacity duration-300 z-10" />
                     <Image
                     src={imageUrl}
                     alt={`Screenshot of ${title}`}
@@ -50,12 +40,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
                 {/* Text Content */}
                 <div className="flex flex-col flex-grow">
-                    <h3 className="text-lg sm:text-xl font-semibold font-[family-name:var(--font-geist-sans)] text-[color:var(--primary-blue)] mb-2 group-hover/card:text-white transition-colors duration-300">
+                    <h3 className="text-lg sm:text-xl font-semibold font-[family-name:var(--font-geist-sans)] mb-2 group-hover/card:text-white transition-colors duration-300">
                     {title}
                     </h3>
-                    <p className="text-sm text-[color:var(--foreground)] opacity-80 leading-relaxed mb-4 flex-grow font-[family-name:var(--font-geist-sans)] group-hover/card:opacity-100 transition-opacity duration-300">
+                    <div className="text-sm text-[#929DA7] leading-relaxed mb-4 flex-grow font-[family-name:var(--font-geist-sans)] group-hover/card:opacity-100 transition-opacity duration-300">
+                        {description.split('\n\n').map((paragraph, index) => (
+                            <p key={index} className="mb-3 last:mb-0">
+                                {paragraph.trim()}
+                            </p>
+                        ))}
+                    </div>
+                    {/* <p className="text-sm text-[color:var(--foreground)] opacity-80 leading-relaxed mb-4 flex-grow font-[family-name:var(--font-geist-sans)] group-hover/card:opacity-100 transition-opacity duration-300">
                     {description}
-                    </p>
+                    </p> */}
 
                     {/* Technologies */}
                     <div className="mb-4">
@@ -102,7 +99,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     </div>
                 </div>
             </div>
-        </Tilt>
     );
   // Optional: Wrap with Tilt component if you want that effect
   // return <Tilt options={{ max: 8, perspective: 1000, scale: 1.01 }} className="group">{cardContent}</Tilt>;
