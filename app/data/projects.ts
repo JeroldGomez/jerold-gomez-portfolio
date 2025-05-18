@@ -3,8 +3,8 @@ export type Project = {
     imageUrl: string;
     description: string;
     technologies: string[];
-    liveLink: string | null;
-    githubLink: string;
+    liveLink?: string | null;
+    githubLink?: string;
 };
 
 export const projectsData: Project[] = [
@@ -19,30 +19,30 @@ export const projectsData: Project[] = [
         githubLink: "https://github.com/yourusername/chatbot-project",
     },
     {
-        title: "E-commerce Analytics Dashboard",
-        imageUrl: "/projects/dashboard-mockup.png",
+        title: "E-commerce Website Optimization Analysis",
+        imageUrl: "/Google_c.svg",
         description:
-        "Designed and built an interactive dashboard for an e-commerce client to visualize sales trends, customer behavior, and inventory levels, enabling data-driven decision-making.",
-        technologies: ["Python (Pandas, Plotly)", "SQL", "Tableau", "React"],
+        "As part of my Google Data Analytics Professional Certificate, I conducted a comprehensive case study focused on optimizing conversion rates for an e-commerce website. Using R (tidyverse, janitor) for data cleaning and analysis, and Tableau for visualization, I explored user behavior across various dimensions: demographics, traffic sources, and membership status.",
+        technologies: ["R","RStudio", "Tableau"],
+        liveLink: null,
+        githubLink: "https://github.com/yourusername/ecommerce-dashboard",
+    },
+    {
+        title: "Amazon Fine Food Review Sentiment Analysis",
+        imageUrl: "/amazon2.png",
+        description:
+        "This project aims to perform sentiment analysis on a dataset of Amazon Fine Food Reviews using two different approaches: VADER sentiment analysis and the RoBERTa pretrained model. By comparing the results from these two methods, we gain insights into the differences and strengths of each approach in analyzing sentiment.",
+        technologies: ["Python (Pandas, NumPy)", "NLTK", "Matplotlib ", "Seaborn"],
         liveLink: null,
         githubLink: "https://github.com/yourusername/ecommerce-dashboard",
     },
     {
         title: "Personal Portfolio Website",
-        imageUrl: "/projects/portfolio-mockup.png",
+        imageUrl: "/jb.png",
         description:
-        "This very portfolio! Built with Next.js, Tailwind CSS, and showcasing a blend of data science projects and my journey in tech. Features an animated ASCII background.",
+        "This very portfolio! Built with Next.js, Tailwind CSS, and showcasing a blend of data science projects and my journey in tech.",
         technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Canvas API"],
         liveLink: "/",
-        githubLink: "https://github.com/yourusername/my-portfolio",
-    },
-    {
-        title: "Personal Portfolio Website",
-        imageUrl: "/projects/portfolio-mockup.png",
-        description:
-        "This very portfolio! Built with Next.js, Tailwind CSS, and showcasing a blend of data science projects and my journey in tech. Features an animated ASCII background.",
-        technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Canvas API"],
-        liveLink: "/",
-        githubLink: "https://github.com/yourusername/my-portfolio",
+        // githubLink: "https://github.com/yourusername/my-portfolio",
     },
 ]; 

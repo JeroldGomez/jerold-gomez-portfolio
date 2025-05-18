@@ -289,6 +289,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          id="projects"
         >
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-5 gap-2 md:gap-0">
             <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
