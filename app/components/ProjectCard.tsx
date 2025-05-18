@@ -43,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     <h3 className="text-lg sm:text-xl font-semibold font-[family-name:var(--font-geist-sans)] mb-2 group-hover/card:text-white transition-colors duration-300">
                     {title}
                     </h3>
-                    <div className="text-sm text-[#929DA7] leading-relaxed mb-4 flex-grow font-[family-name:var(--font-geist-sans)] group-hover/card:opacity-100 transition-opacity duration-300">
+                    <div className="text-sm text-[#929DA7] leading-relaxed mb-4 flex-grow font-[family-name:var(--font-geist-sans)] transition-colors duration-300 group-hover/card:text-[#c4c4c4]">
                         {description.split('\n\n').map((paragraph, index) => (
                             <p key={index} className="mb-3 last:mb-0">
                                 {paragraph.trim()}
@@ -100,8 +100,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 </div>
             </div>
     );
-  // Optional: Wrap with Tilt component if you want that effect
-  // return <Tilt options={{ max: 8, perspective: 1000, scale: 1.01 }} className="group">{cardContent}</Tilt>;
   return <div className="group">{cardContent}</div>; // 'group' class for hover effects on children
 };
 
