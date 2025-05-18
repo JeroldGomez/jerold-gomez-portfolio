@@ -14,7 +14,7 @@ export const projectsData: Project[] = [
         description: `Our thesis project introduces an innovative AI-powered chatbot system designed to enhance student support services at the Office of Student Empowerment and Support (OSES) of City College of Tagaytay. This intelligent system aims to provide real-time responses to common student inquiries.
 
         Integrated with Facebook Messenger and Gmail, the chatbot utilizes GPT-4o mini to deliver personalized and multilingual support anytime, even outside office hours.`,
-        technologies: ["OpenAI API", "Javascript", "Firebase"],
+        technologies: ["OpenAI API", "Javascript", "Firebase", "Botpress.com", "Make.com"],
         liveLink: "#",
         githubLink: "https://github.com/yourusername/chatbot-project",
     },
