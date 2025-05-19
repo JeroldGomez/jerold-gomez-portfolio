@@ -22,7 +22,9 @@ export const projectsData: Project[] = [
         title: "E-commerce Website Optimization Analysis",
         imageUrl: "/Google_c.svg",
         description:
-        "As part of my Google Data Analytics Professional Certificate, I conducted a comprehensive case study focused on optimizing conversion rates for an e-commerce website. Using R (tidyverse, janitor) for data cleaning and analysis, and Tableau for visualization, I explored user behavior across various dimensions: demographics, traffic sources, and membership status.",
+        `As part of my Google Data Analytics Professional Certificate, I conducted a comprehensive case study focused on optimizing conversion rates for an e-commerce website. \n
+        
+        Using R (tidyverse, janitor) for data cleaning and analysis, and Tableau for visualization, I explored user behavior across various dimensions: demographics, traffic sources, and membership status.`,
         technologies: ["R","RStudio", "Tableau"],
         liveLink: null,
         githubLink: "https://github.com/JeroldGomez/e-commerce-website-optimization-analysis",

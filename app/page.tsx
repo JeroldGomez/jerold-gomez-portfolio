@@ -314,7 +314,7 @@ export default function Home() {
 
           {/* Grid for Project Cards */}
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-stretch"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -327,6 +327,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 + (index * 0.1) }}
+                className="h-full"
               >
                 <ProjectCard
                   title={project.title}

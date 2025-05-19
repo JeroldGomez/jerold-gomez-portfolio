@@ -100,7 +100,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 </div>
             </div>
     );
-  return <div className="group">{cardContent}</div>; // 'group' class for hover effects on children
+  return <div className="group h-full">{cardContent}</div>;
 };
 
 export default ProjectCard;
