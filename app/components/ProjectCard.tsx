@@ -2,10 +2,9 @@
 'use client'; // If you plan to use client-side hooks like Tilt here later
 
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowUpRightIcon, CodeBracketIcon } from "@heroicons/react/20/solid"; // Or use GitHub icon from public
 // import Tilt from 'react-parallax-tilt'; // Optional: If you want to add tilt to project cards
-import Tilt from 'react-parallax-tilt'; 
+// import Tilt from 'react-parallax-tilt'; 
 
 interface ProjectCardProps {
     title: string;
@@ -93,7 +92,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         >
                         <Image src="/github.png" alt="GitHub" width={14} height={14} className="opacity-70 group-hover/link:opacity-100 transition-opacity duration-300" />
                         Source Code
-                        <ArrowUpRightIcon className="w-3.5 h-3.5 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
+                        <CodeBracketIcon className="w-3.5 h-3.5 transition-transform group-hover/link:-translate-x-0.5 group-hover/link:translate-x-0.5" />
                         </a>
                     )}
                     </div>

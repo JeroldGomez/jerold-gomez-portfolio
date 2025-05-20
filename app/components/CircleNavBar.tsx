@@ -1,4 +1,4 @@
-import { HomeIcon, UserIcon, BriefcaseIcon, EnvelopeIcon, FolderIcon } from '@heroicons/react/24/outline';
+import { EnvelopeIcon, FolderIcon } from '@heroicons/react/24/outline';
 import { useEffect } from 'react';
 import Image from 'next/image';
 import Tilt from 'react-parallax-tilt'; 
