@@ -95,7 +95,8 @@ const Contact = () => {
         } else {
           throw new Error(data.error || 'Failed to send message');
         }
-      } catch (error) {
+      } catch (error: any) { // eslint-disable-line @typescript-eslint/no-explicit-any
+        console.error('Error sending message:', error);
         setSubmitStatus({
           type: 'error',
           message: 'Failed to send message. Please try again later.'
@@ -133,9 +134,7 @@ const Contact = () => {
         <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
           04.
         </span>
-        Let's Connect{" "}
-        <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
-        </span>
+        Let&apos;s Connect{" "} {/* eslint-disable-line react/no-unescaped-entities */}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
