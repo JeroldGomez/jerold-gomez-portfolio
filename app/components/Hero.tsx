@@ -21,14 +21,14 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             id="home"
-            className="text-sm font-light leading-relaxed font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-text-color)]"
+            className="text-sm font-light leading-relaxed font-[family-name:var(--font-geist-mono)] text-[#fff]"
         >
             Hi, my name is <br /><br />
             <motion.span 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-5xl font-bold font-[family-name:var(--font-geist-sans)] text-[color:var(--secondary-text-color)]"
+            className="text-5xl font-bold font-[family-name:var(--font-geist-sans)] text-[#fff]"
             >
             Jerold Gomez
             </motion.span> <br />
@@ -65,7 +65,7 @@ const Hero = () => {
         >
             <motion.a
             whileTap={{ scale: 0.95 }}
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="bg-[#fff] text-[#000] rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="mailto:jeroldgomez345@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -75,7 +75,7 @@ const Hero = () => {
             </motion.a>
             <motion.a
             whileTap={{ scale: 0.95 }}
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] gap-2 dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+            className="text-[#fff] rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] gap-2 dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
             href="https://github.com/JeroldGomez"
             target="_blank"
             rel="noopener noreferrer"
