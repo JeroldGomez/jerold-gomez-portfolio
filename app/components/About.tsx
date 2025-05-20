@@ -26,7 +26,7 @@ const About = () => {
           href="https://github.com/JeroldGomez"
           target="_blank"
           rel="noopener noreferrer"
-          className="group transition-all duration-200 hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
+          className="group transition-all duration-200 text-[#fff] hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
         >
           More About me
           <ArrowUpRightIcon className="w-4 h-4 ml-1 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -71,7 +71,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="w-full sm:w-2/3"
         >
-          <p className="font-[family-name:var(--font-geist-sans)] text-[color:var(--secondary-text-color)] leading-relaxed">
+          <p className="font-[family-name:var(--font-geist-sans)] text-[#fff] leading-relaxed">
             I am a passionate{" "}
             <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
               Computer Science{" "}
