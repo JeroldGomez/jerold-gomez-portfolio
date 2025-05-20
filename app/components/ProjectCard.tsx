@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
                 {/* Text Content */}
                 <div className="flex flex-col flex-grow">
-                    <h3 className="text-lg sm:text-xl font-semibold font-[family-name:var(--font-geist-sans)] mb-2 group-hover/card:text-white transition-colors duration-300">
+                    <h3 className="text-[#fff] text-lg sm:text-xl font-semibold font-[family-name:var(--font-geist-sans)] mb-2 group-hover/card:text-white transition-colors duration-300">
                     {title}
                     </h3>
                     <div className="text-sm text-[#929DA7] leading-relaxed mb-4 flex-grow font-[family-name:var(--font-geist-sans)] transition-colors duration-300 group-hover/card:text-[#c4c4c4]">
@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
                     {/* Technologies */}
                     <div className="mb-4">
-                    <h4 className="text-xs font-semibold font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-blue)] mb-1.5 uppercase tracking-wider group-hover/card:text-white/90 transition-colors duration-300">
+                    <h4 className="text-[#fff] text-xs font-semibold font-[family-name:var(--font-geist-mono)] mb-1.5 uppercase tracking-wider group-hover/card:text-white/90 transition-colors duration-300">
                         Technologies
                     </h4>
                     <div className="flex flex-wrap gap-2">
@@ -77,7 +77,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         href={liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-medium font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-blue)] hover:text-[color:var(--primary-blue)] transition-all duration-300 inline-flex items-center gap-1.5 group/link hover:translate-x-0.5"
+                        className="text-xs font-medium font-[family-name:var(--font-geist-mono)] text-[#fff] transition-all duration-300 inline-flex items-center gap-1.5 group/link hover:translate-x-0.5"
                         >
                         Live Demo
                         <ArrowUpRightIcon className="w-3.5 h-3.5 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
@@ -88,7 +88,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         href={githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-medium font-[family-name:var(--font-geist-mono)] text-[color:var(--secondary-blue)] hover:text-[color:var(--primary-blue)] transition-all duration-300 inline-flex items-center gap-1.5 group/link hover:translate-x-0.5"
+                        className="text-xs font-medium font-[family-name:var(--font-geist-mono)] text-[#fff] transition-all duration-300 inline-flex items-center gap-1.5 group/link hover:translate-x-0.5"
                         >
                         <Image src="/github.png" alt="GitHub" width={14} height={14} className="opacity-70 group-hover/link:opacity-100 transition-opacity duration-300" />
                         Source Code

@@ -130,7 +130,7 @@ const Contact = () => {
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="w-full mt-20 sm:mt-28"
     >
-      <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5">
+      <h2 className="text-[#fff] text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5">
         <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
           04.
         </span>
@@ -145,32 +145,32 @@ const Contact = () => {
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           className="flex flex-col gap-5 sm:gap-6"
         >
-          <p className="opacity-80 font-[family-name:var(--font-geist-sans)] font-light">
+          <p className="text-[#c4c4c4] font-[family-name:var(--font-geist-sans)] font-light">
             I&apos;m always open to discussing new projects, creative ideas, or opportunities. Whether you have a question or just want to say hi, I&apos;ll do my best to get back to you!
           </p>
-          <div className="flex flex-col gap-4 mt-2 sm:mt-4">
+          <div className="flex flex-col gap-4 mt-2 sm:mt-4 text-[#c4c4c4]">
             {[
               {
                 href: "mailto:jeroldgomez345@gmail.com", 
-                icon: <Image src="/email-w.png" alt="Email" width={20} height={20} className="opacity-80 group-hover:opacity-100"/>,
+                icon: <Image src="/email-w.png" alt="Email" width={20} height={20} className="group-hover:opacity-100"/>,
                 text: "jeroldgomez345@gmail.com",
                 label: "Email Jerold Gomez"
               },
               {
                 href: "https://www.linkedin.com/in/jeroldgomez/",
-                icon: <Image src="/linkedin-logo.png" alt="LinkedIn" width={20} height={20} className="opacity-80 group-hover:opacity-100"/>,
+                icon: <Image src="/linkedin-logo.png" alt="LinkedIn" width={20} height={20} className="group-hover:opacity-100"/>,
                 text: "linkedin.com/in/jeroldgomez",
                 label: "Jerold Gomez on LinkedIn"
               },
               {
                 href: "https://github.com/JeroldGomez", 
-                icon: <Image src="/github.png" alt="GitHub" width={20} height={20} className="opacity-80 group-hover:opacity-100"/>,
+                icon: <Image src="/github.png" alt="GitHub" width={20} height={20} className="group-hover:opacity-100"/>,
                 text: "github.com/JeroldGomez",
                 label: "Jerold Gomez on GitHub"
               },
               {
                 href: "https://www.facebook.com/JeroldGomezzz",
-                icon: <Image src="/facebook.png" alt="Facebook" width={20} height={20} className="opacity-80 group-hover:opacity-100"/>,
+                icon: <Image src="/facebook.png" alt="Facebook" width={20} height={20} className="group-hover:opacity-100"/>,
                 text: "facebook.com/JeroldGomezzz",
                 label: "Jerold Gomez on Facebook"
               },
@@ -210,13 +210,13 @@ const Contact = () => {
           }}
           className="p-6 rounded-xl bg-neutral-800/30 backdrop-blur-sm border border-neutral-700/50 hover:border-neutral-600/70 transition-all duration-300 hover:shadow-lg hover:shadow-neutral-900/20"
         >
-          <h3 className="text-xl sm:text-lg font-normal mb-5 sm:mb-3 font-[family-name:var(--font-geist-sans)] text-[color:var(--primary-blue)]">
+          <h3 className="text-xl sm:text-lg font-normal mb-5 sm:mb-3 font-[family-name:var(--font-geist-sans)] text-[#fff]">
             Send a Quick Message
           </h3>
           <div className="h-[1px] w-full bg-[#383838] opacity-50"></div>
           <form className="flex flex-col gap-5 mt-4" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="name" className="block text-[14px] mb-1.5 font-medium opacity-70 font-[family-name:var(--font-geist-sans)]">
+              <label htmlFor="name" className="text-[#c4c4c4] block text-[14px] mb-1.5 font-medium opacity-70 font-[family-name:var(--font-geist-sans)]">
                 Your Name:
               </label>
               <input
@@ -235,7 +235,7 @@ const Contact = () => {
               )}
             </div>
             <div>
-              <label htmlFor="email" className="block text-[14px] mb-1.5 opacity-70 font-medium font-[family-name:var(--font-geist-sans)]">
+              <label htmlFor="email" className="text-[#c4c4c4] block text-[14px] mb-1.5 opacity-70 font-medium font-[family-name:var(--font-geist-sans)]">
                 Your Email:
               </label>
               <input
@@ -254,7 +254,7 @@ const Contact = () => {
               )}
             </div>
             <div>
-              <label htmlFor="message" className="block text-[14px] opacity-70 mb-1.5 font-medium font-[family-name:var(--font-geist-sans)]">
+              <label htmlFor="message" className="text-[#c4c4c4] block text-[14px] opacity-70 mb-1.5 font-medium font-[family-name:var(--font-geist-sans)]">
                 Your Message:
               </label>
               <textarea
@@ -286,7 +286,7 @@ const Contact = () => {
               whileTap={{ scale: 0.97 }}
               type="submit"
               disabled={isSubmitting}
-              className={`font-[family-name:var(--font-geist-sans)] rounded-lg border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto ${
+              className={`text-[#000] font-[family-name:var(--font-geist-sans)] rounded-lg border border-solid border-transparent transition-colors flex items-center justify-center bg-[#fff] gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto ${
                 isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
               }`}
             >
