@@ -10,6 +10,8 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
+
 
 export default function Home() {
   return (
@@ -48,6 +50,15 @@ export default function Home() {
                 <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
                 </span>
               </h2>
+              {/* <a
+                href="https://www.linkedin.com/in/jeroldgomez/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group transition-all duration-200 text-[#fff] hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
+              >
+                View Resume
+                <ArrowUpRightIcon className="w-4 h-4 ml-1 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a> */}
             </div>
           </motion.div>
 
@@ -88,6 +99,15 @@ export default function Home() {
               <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
               </span>
             </h2>
+            <a
+                href="https://github.com/JeroldGomez"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group transition-all duration-200 text-[#fff] hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
+              >
+                View More on Github
+                <ArrowUpRightIcon className="w-4 h-4 ml-1 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a>
           </div>
 
           {/* Grid for Project Cards */}

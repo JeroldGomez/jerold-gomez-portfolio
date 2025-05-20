@@ -210,7 +210,7 @@ const Contact = () => {
           }}
           className="p-6 rounded-xl bg-neutral-800/30 backdrop-blur-sm border border-neutral-700/50 hover:border-neutral-600/70 transition-all duration-300 hover:shadow-lg hover:shadow-neutral-900/20"
         >
-          <h3 className="text-xl sm:text-lg font-normal mb-5 sm:mb-3 font-[family-name:var(--font-geist-sans)] text-[#fff]">
+          <h3 className="text-xl sm:text-lg font-semibold mb-5 sm:mb-3 font-[family-name:var(--font-geist-sans)] text-[#fff]">
             Send a Quick Message
           </h3>
           <div className="h-[1px] w-full bg-[#383838] opacity-50"></div>
