@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
     const cardContent = (
 
-            <div className="p-5 sm:p-6 rounded-xl bg-neutral-800/40 backdrop-blur-md border border-neutral-700/60 hover:border-white/20 transition-all duration-500 hover:shadow-xl hover:shadow-neutral-900/30 flex flex-col h-full group/card transform hover:scale-[1.01] transition-transform duration-300">
+            <div className="p-5 sm:p-6 rounded-xl bg-neutral-800/40 backdrop-blur-md border border-neutral-700/60 hover:border-white/20 transition-all duration-300 hover:shadow-xl hover:shadow-neutral-900/30 flex flex-col h-full group/card transform hover:scale-[1.01] transition-transform duration-300">
                 <div className="relative w-full aspect-[16/9] rounded-md overflow-hidden mb-4 border border-neutral-700/50 group-hover/card:border-white/30 transition-colors duration-300">
                     <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/50 to-transparent opacity-0 transition-opacity duration-300 z-10" />
                     <Image

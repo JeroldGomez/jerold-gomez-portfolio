@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@types/nodemailer": "^6.4.17",
     "framer-motion": "^12.9.4",
     "next": "15.3.1",
+    "nodemailer": "^7.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-parallax-tilt": "^1.7.294",
