@@ -147,7 +147,7 @@ const Contact = () => {
           className="flex flex-col gap-5 sm:gap-6"
         >
           <p className="opacity-80 font-[family-name:var(--font-geist-sans)] font-light">
-            I'm always open to discussing new projects, creative ideas, or opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+            I&apos;m always open to discussing new projects, creative ideas, or opportunities. Whether you have a question or just want to say hi, I&apos;ll do my best to get back to you!
           </p>
           <div className="flex flex-col gap-4 mt-2 sm:mt-4">
             {[

@@ -51,7 +51,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-xl font-semibold font-[family-name:var(--font-geist-sans)] text-[#929DA7]"
         > 
-            Currently pursuing my Bachelor's degree in Computer Science, I find joy in unraveling the insights hidden within data sets and transforming them into {" "}
+            Currently pursuing my Bachelor&apos;s degree in Computer Science, I find joy in unraveling the insights hidden within data sets and transforming them into {" "}
             <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
             meaningful stories.
             </span>

@@ -1,6 +1,5 @@
 // src/components/ExperienceItem.tsx
 import Image from "next/image";
-import Link from "next/link"; // Use Next.js Link for internal/external links if needed
 import { ArrowUpRightIcon, MapPinIcon, GlobeAltIcon } from "@heroicons/react/20/solid"; // Import icons
 import { motion } from "framer-motion";
 import Tilt from 'react-parallax-tilt'; 

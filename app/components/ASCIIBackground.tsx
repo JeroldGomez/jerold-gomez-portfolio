@@ -74,8 +74,6 @@ const AsciiBackground: React.FC = () => {
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
 
-        let frameCount = 0; // Use frame count or Date.now() for time
-
         const resizeCanvas = () => {
             canvas.width = window.innerWidth * window.devicePixelRatio; // Adjust for device pixel ratio
             canvas.height = window.innerHeight * window.devicePixelRatio;

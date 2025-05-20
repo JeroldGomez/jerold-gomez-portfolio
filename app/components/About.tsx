@@ -85,7 +85,7 @@ const About = () => {
             </span>
             that assists students with general inquiries at our institution. This project involves tools such as OpenAI, Firebase, and Node.js, and has strengthened my skills in natural language processing, chatbot development, and cloud integration.
             <br /> <br />
-            Outside of academics, I'm constantly learning new technologies, experimenting with innovative solutions, and looking for ways to apply my knowledge to{" "} 
+            Outside of academics, I&apos;m constantly learning new technologies, experimenting with innovative solutions, and looking for ways to apply my knowledge to{" "} 
             <span className="font-normal font-[family-name:var(--font-playfair-display)] italic text-[#ffffff]">
               create meaningful impact{" "}
             </span>

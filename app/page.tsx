@@ -1,131 +1,17 @@
 'use client'; 
 
-import Image from "next/image"; // Section icon
-import ExperienceItem from "./components/ExperienceItem"; // Import the component
+import ExperienceItem from "./components/ExperienceItem";
 import ProjectCard from "./components/ProjectCard";
-import Tilt from 'react-parallax-tilt'; 
-import { motion } from 'framer-motion'; // Add Framer Motion import
-import { LightBulbIcon, ChatBubbleLeftEllipsisIcon, EnvelopeIcon, } from "@heroicons/react/24/outline";
-import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
+import { motion } from 'framer-motion';
 import CircleNavBar from "./components/CircleNavBar";
 import { projectsData } from './data/projects';
 import { workExperience } from './data/experience';
-import { useState } from 'react';
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function Home() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [errors, setErrors] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<{
-    type: 'success' | 'error' | null;
-    message: string;
-  }>({ type: null, message: '' });
-
-  const validateEmail = (email: string) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-
-  const validateForm = () => {
-    let isValid = true;
-    const newErrors = {
-      name: '',
-      email: '',
-      message: ''
-    };
-
-    // Name validation
-    if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
-      isValid = false;
-    }
-
-    // Email validation
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
-      isValid = false;
-    } else if (!validateEmail(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
-      isValid = false;
-    }
-
-    // Message validation
-    if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
-      isValid = false;
-    } else if (formData.message.trim().length < 10) {
-      newErrors.message = 'Message must be at least 10 characters long';
-      isValid = false;
-    }
-
-    setErrors(newErrors);
-    return isValid;
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (validateForm()) {
-      setIsSubmitting(true);
-      setSubmitStatus({ type: null, message: '' });
-
-      try {
-        const response = await fetch('/api/send-email', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        });
-
-        const data = await response.json();
-
-        if (response.ok) {
-          setSubmitStatus({
-            type: 'success',
-            message: 'Message sent successfully! I will get back to you soon.'
-          });
-          setFormData({ name: '', email: '', message: '' });
-        } else {
-          throw new Error(data.error || 'Failed to send message');
-        }
-      } catch (error) {
-        setSubmitStatus({
-          type: 'error',
-          message: 'Failed to send message. Please try again later.'
-        });
-      } finally {
-        setIsSubmitting(false);
-      }
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-    // Clear error when user starts typing
-    if (errors[name as keyof typeof errors]) {
-      setErrors(prev => ({
-        ...prev,
-        [name]: ''
-      }));
-    }
-  };
-
   return (
     <div className="relative">
       <CircleNavBar />
@@ -158,7 +44,7 @@ export default function Home() {
                 <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
                   02.
                 </span>
-                Where I've Worked{" "}
+                Where I&apos;ve Worked{" "}
                 <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
                 </span>
               </h2>
@@ -198,7 +84,7 @@ export default function Home() {
               <span className="text-[13px] font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
                 03.
               </span>
-              What I've Built{" "}
+              What I&apos;ve Built{" "}
               <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
               </span>
             </h2>
