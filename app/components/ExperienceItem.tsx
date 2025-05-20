@@ -70,10 +70,10 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                                         href={companyLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="hover:underline inline-flex items-center gap-1.5 transition-colors hover:text-[color:var(--secondary-blue)]"
+                                        className="hover:underline inline-flex items-center gap-1.5 transition-colors text-[#fff]"
                                     >
                                         {title}
-                                        <ArrowUpRightIcon className="w-4 h-4 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                                        <ArrowUpRightIcon className="text-[#fff] w-4 h-4 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                                     </a>
                                 ) : (
                                     title
@@ -85,14 +85,14 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                         </div>
 
                         {/* Description */}
-                        <div className="text-sm leading-relaxed text-[color:var(--foreground)] opacity-90 font-[family-name:var(--font-geist-sans)] space-y-2">
+                        <div className="text-sm leading-relaxed text-[#c4c4c4] opacity-90 font-[family-name:var(--font-geist-sans)] space-y-2">
                             {description.split('\n\n').map((paragraph, index) => (
                                 <p key={index}>{paragraph.trim()}</p>
                             ))}
                         </div>
 
                         {/* Location Tag */}
-                        <div className="flex items-center gap-2 mt-4 font-[family-name:var(--font-geist-sans)]">
+                        <div className="flex items-center gap-2 mt-4 font-[family-name:var(--font-geist-sans)] text-[#fff]">
                             <span className="inline-flex items-center gap-1.5 text-xs font-medium px-2 py-0.5 rounded-full bg-neutral-800/50 text-[color:var(--secondary-blue)] border border-neutral-700/50">
                                 <LocationIcon className="w-3 h-3" />
                                 {location}
