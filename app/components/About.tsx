@@ -23,7 +23,7 @@ const About = () => {
           </span>
         </h2>
         <a
-          href="https://github.com/JeroldGomez"
+          href="https://www.linkedin.com/in/jeroldgomez/"
           target="_blank"
           rel="noopener noreferrer"
           className="group transition-all duration-200 text-[#fff] hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
