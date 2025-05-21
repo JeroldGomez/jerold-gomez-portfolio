@@ -1,4 +1,4 @@
-# Jerold Gomez Portfolio
+# jerold-gomez.vercel.app
 
 [![Website](https://img.shields.io/badge/website-live-blue?style=flat-square&logo=vercel)](https://jerold-gomez.vercel.app)
 
