@@ -63,6 +63,6 @@ export const projectsData: Project[] = [
         "This very portfolio! Built with Next.js, Tailwind CSS, and showcasing a blend of data science projects and my journey in tech.",
         technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Canvas API", "Framer Motion"],
         liveLink: "/",
-        // githubLink: "https://github.com/yourusername/my-portfolio",
+        githubLink: "https://github.com/JeroldGomez/jerold-gomez-portfolio",
     },
 ]; 
