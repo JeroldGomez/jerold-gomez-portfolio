@@ -131,7 +131,7 @@ const Contact = () => {
       className="w-full mt-20 sm:mt-28"
     >
       <h2 className="text-[#fff] text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5">
-        <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
+        <span className="text-[13px] font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
           04.
         </span>
         Let&apos;s Connect{" "} {/* eslint-disable-line react/no-unescaped-entities */}

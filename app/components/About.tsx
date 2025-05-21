@@ -15,7 +15,7 @@ const About = () => {
     >
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-5 gap-2 md:gap-0">
         <h2 className="text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] text-[#fff]">
-          <span className="text-sm font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
+          <span className="text-[13px] font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
             01.
           </span>
           A Bit About Me{" "}
