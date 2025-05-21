@@ -50,15 +50,15 @@ export default function Home() {
                 <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
                 </span>
               </h2>
-              {/* <a
-                href="https://www.linkedin.com/in/jeroldgomez/"
+              <a
+                href="/JeroldGomez-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group transition-all duration-200 text-[#fff] hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
               >
                 View Resume
                 <ArrowUpRightIcon className="w-4 h-4 ml-1 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </a> */}
+              </a>
             </div>
           </motion.div>
 
