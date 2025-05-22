@@ -55,7 +55,7 @@ const About = () => {
             <div className="tilt-inner bg-neutral-800/50 p-1 rounded-lg">
               <Image
                 className="rounded-md w-full h-auto block"
-                src="/jerold.jpg"
+                src="/jerold.jpeg"
                 alt="My Picture"
                 width={300}
                 height={300}
