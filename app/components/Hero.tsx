@@ -65,7 +65,7 @@ const Hero = () => {
         >
             <motion.a
             whileTap={{ scale: 0.95 }}
-            className="text-[#000] rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-[#fff] gap-2 dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="text-[#000] rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-[#fff] gap-2 hover:bg-[#909090] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="mailto:jeroldgomez345@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -75,7 +75,7 @@ const Hero = () => {
             </motion.a>
             <motion.a
             whileTap={{ scale: 0.95 }}
-            className="text-[#fff] rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] gap-2 dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+            className="text-[#fff] rounded-full border border-solid border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#131313] gap-2 hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
             href="https://github.com/JeroldGomez"
             target="_blank"
             rel="noopener noreferrer"
