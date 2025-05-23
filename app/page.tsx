@@ -51,7 +51,7 @@ export default function Home() {
                 </span>
               </h2>
               <a
-                href="/JeroldGomez-Resume.pdf"
+                href="/JeroldGomez_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group transition-all duration-200 text-[#fff] hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
