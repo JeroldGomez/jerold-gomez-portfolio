@@ -22,8 +22,8 @@ export const projectsData: Project[] = [
         title: "E-commerce Website Optimization Analysis",
         imageUrl: "/Google_c.svg",
         description:
-        `As part of my Google Data Analytics Professional Certificate, I conducted a comprehensive case study focused on optimizing conversion rates for an e-commerce website. \n
-        
+        `As part of my Google Data Analytics Professional Certificate, I conducted a comprehensive case study focused on optimizing conversion rates for an e-commerce website using a large real-world dataset (170K+ records) from Kaggle.
+
         Using R (tidyverse, janitor) for data cleaning and analysis, and Tableau for visualization, I explored user behavior across various dimensions: demographics, traffic sources, and membership status.`,
         technologies: ["R","RStudio", "Tableau"],
         liveLink: null,
@@ -33,7 +33,9 @@ export const projectsData: Project[] = [
         title: "Amazon Fine Food Review Sentiment Analysis",
         imageUrl: "/amazon2.png",
         description:
-        "This project aims to perform sentiment analysis on a dataset of Amazon Fine Food Reviews using two different approaches: VADER sentiment analysis and the RoBERTa pretrained model. By comparing the results from these two methods, we gain insights into the differences and strengths of each approach in analyzing sentiment.",
+        `Analyzes over 500,000 Amazon fine food reviews to extract insights into customer sentiment using natural language processing (NLP) and machine learning techniques. The workflow includes data cleaning, exploratory data analysis, feature engineering, and the implementation of various sentiment classification models.
+
+        The project demonstrates expertise in data wrangling, visualization, and predictive modeling, with results presented using clear visualizations and interpretable metrics.`,
         technologies: ["Python (Pandas, NumPy)", "NLTK", "Matplotlib ", "Seaborn"],
         liveLink: null,
         githubLink: "https://github.com/JeroldGomez/amazon-fine-food-reviews-sentiment-analysis",
@@ -42,7 +44,9 @@ export const projectsData: Project[] = [
         title: "E-Commerce Laptop Price Comparison Web Scraping",
         imageUrl: "/code_2.svg",
         description:
-        "A Python project that scrapes laptop prices and details from Amazon. The script extracts essential information like product title, price, and brand, and stores it in a pandas DataFrame for easy comparison.",
+        `A Python project that scrapes laptop prices and details from Amazon. The script extracts essential information like product title, price, and brand, and stores it in a pandas DataFrame.
+
+        The collected data is then normalized and presented in an intuitive interface, allowing users to easily compare options and make informed purchasing decisions.`,
         technologies: ["Python (Pandas)"],
         liveLink: null,
         githubLink: "https://github.com/JeroldGomez/e-commerce-laptop-price-comparison-web-scraping",
