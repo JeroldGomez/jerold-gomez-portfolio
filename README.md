@@ -20,27 +20,9 @@ Welcome to my personal portfolio repository! This project showcases my journey a
 - `/public` – Static assets (images, icons)
 - `/styles` – Global and component-level styles
 
-## 🛠️ Getting Started
-
-Clone the repo and install dependencies:
-
-```bash
-git clone https://github.com/JeroldGomez/jerold-gomez-portfolio.git
-cd jerold-gomez-portfolio
-npm install
-```
-
-Run the development server:
-
-```bash
-npm run dev
-```
-
-Visit [http://localhost:3000](http://localhost:3000) to view locally.
-
 ## 📦 Deployment
 
-This portfolio is deployed on [Vercel](https://vercel.com). Push to `main` branch to trigger deployment.
+This portfolio is deployed on [Vercel](https://vercel.com).
 
 ## 🤝 Contributions
 
