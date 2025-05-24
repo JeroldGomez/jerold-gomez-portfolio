@@ -65,10 +65,10 @@ const About = () => {
           </Tilt>
         </motion.div>
         <motion.div 
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 8 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
           className="w-full sm:w-2/3"
         >
           <p className="font-[family-name:var(--font-geist-sans)] text-[#fff] leading-relaxed">
