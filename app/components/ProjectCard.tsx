@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { ArrowUpRightIcon, CodeBracketIcon } from "@heroicons/react/20/solid"; 
 
-
 interface ProjectCardProps {
     title: string;
     imageUrl: string;
