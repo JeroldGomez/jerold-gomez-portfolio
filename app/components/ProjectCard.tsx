@@ -1,10 +1,8 @@
-// src/components/ProjectCard.tsx
-'use client'; // If you plan to use client-side hooks like Tilt here later
+'use client'; 
 
 import Image from "next/image";
-import { ArrowUpRightIcon, CodeBracketIcon } from "@heroicons/react/20/solid"; // Or use GitHub icon from public
-// import Tilt from 'react-parallax-tilt'; // Optional: If you want to add tilt to project cards
-// import Tilt from 'react-parallax-tilt'; 
+import { ArrowUpRightIcon, CodeBracketIcon } from "@heroicons/react/20/solid"; 
+
 
 interface ProjectCardProps {
     title: string;
@@ -49,9 +47,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             </p>
                         ))}
                     </div>
-                    {/* <p className="text-sm text-[color:var(--foreground)] opacity-80 leading-relaxed mb-4 flex-grow font-[family-name:var(--font-geist-sans)] group-hover/card:opacity-100 transition-opacity duration-300">
-                    {description}
-                    </p> */}
 
                     {/* Technologies */}
                     <div className="mb-4">
