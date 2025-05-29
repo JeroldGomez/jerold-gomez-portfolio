@@ -33,10 +33,10 @@ export const projectsData: Project[] = [
         title: "Amazon Fine Food Review Sentiment Analysis",
         imageUrl: "/amazon2.png",
         description:
-        `Analyzes over 500,000 Amazon fine food reviews to extract insights into customer sentiment using natural language processing (NLP) and machine learning techniques. The workflow includes data cleaning, exploratory data analysis, feature engineering, and the implementation of various sentiment classification models.
+        `Performing sentiment analysis on over 500,000 Amazon food reviews using two NLP approaches: VADER and the RoBERTa pre-trained transformer model. 
 
-        The project demonstrates expertise in data wrangling, visualization, and predictive modeling, with results presented using clear visualizations and interpretable metrics.`,
-        technologies: ["Python (Pandas, NumPy)", "NLTK", "Matplotlib ", "Seaborn"],
+        I used Python (Pandas, NumPy) for data processing and manipulation; NLTK for VADER sentiment analysis; the Hugging Face transformers library for RoBERTa-based sentiment modeling; scipy.special for probability calculations (softmax); tqdm for efficient progress tracking; and Matplotlib and Seaborn for data visualization and model comparison.`,
+        technologies: ["Python (Pandas, NumPy)", "NLTK", "Hugging Face Transformers", "Matplotlib ", "Seaborn"],
         liveLink: null,
         githubLink: "https://github.com/JeroldGomez/amazon-fine-food-reviews-sentiment-analysis",
     },
@@ -44,10 +44,10 @@ export const projectsData: Project[] = [
         title: "E-Commerce Laptop Price Comparison Web Scraping",
         imageUrl: "/code_2.svg",
         description:
-        `A Python project that scrapes laptop prices and details from Amazon. The script extracts essential information like product title, price, and brand, and stores it in a pandas DataFrame.
+        `A Python project that scrapes laptop prices and details from an e-commerce website. The script extracts essential information like product title, price, and brand, and stores it in a pandas DataFrame.
 
         The collected data is then normalized and presented in an intuitive interface, allowing users to easily compare options and make informed purchasing decisions.`,
-        technologies: ["Python (Pandas)"],
+        technologies: ["Python (Pandas)", "Requests-html"],
         liveLink: null,
         githubLink: "https://github.com/JeroldGomez/e-commerce-laptop-price-comparison-web-scraping",
     },
