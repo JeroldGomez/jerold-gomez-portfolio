@@ -15,13 +15,13 @@ const Footer = () => {
           <span className="font-normal font-[family-name:var(--font-geist-sans)] text-[#fff]">
             Next.js, Tailwind CSS{" "}
           </span>
-          , and a foundation of late-night coffee and curiosity. This space showcases a passion for data, and a continuous journey of learning and creating in the applications of AI.{" "}
+          , and a foundation of late-night coffee and curiosity. This space showcases my passion for data science, statistical analysis, and machine learning, as I continue my journey of learning and creating in this dynamic field.{" "}
           <span className="font-normal font-[family-name:var(--font-geist-sans)] text-[#fff]">
             Thank you for visiting!
           </span>
         </p>
         <p className="text-xs text-[#929DA7] font-[family-name:var(--font-geist-mono)]">
-          © {new Date().getFullYear()} Jerold Gomez.
+          © {new Date().getFullYear()} Jerold Gomez. All rights reserved.
         </p>
       </div>
     </footer>
