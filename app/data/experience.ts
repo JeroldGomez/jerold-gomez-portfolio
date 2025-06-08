@@ -14,7 +14,7 @@ export const workExperience: Experience[] = [
         date: "Aug - Sep, 2024",
         logo: "/cct_logo_t_main.svg",
         alt: "Company A Logo",
-        title: "Data Analyst Intern · CCT",
+        title: "Data Analyst Intern · City College of Tagaytay",
         companyLink: "",
         description: `Enhanced data integrity and operational efficiency by cleaning and processing large enrollment/academic datasets using Google Sheets. Developed interactive Power BI dashboards, transforming complex data into actionable insights that supported institutional decision-making.
 
@@ -26,7 +26,7 @@ export const workExperience: Experience[] = [
         date: "2023 - 2024",
         logo: "/cct_logo_t_main.svg",
         alt: "University Logo",
-        title: "Junior IT Analyst · CCT",
+        title: "Junior IT Analyst · City College of Tagaytay",
         companyLink: "",
         description: `Contributed to seamless IT infrastructure operations and strategic reporting. Spearheaded the creation of comprehensive reports on initiatives, projects, and achievements, delivering actionable insights that fostered informed decision-making by leadership.`,
         location: "Tagaytay City, Cavite",
