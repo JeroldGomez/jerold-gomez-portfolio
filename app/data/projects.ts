@@ -4,7 +4,7 @@ export type Project = {
     description: string;
     technologies: string[];
     liveLink?: string | null;
-    githubLink?: string;
+    githubLink?: string | null;
 };
 
 export const projectsData: Project[] = [
@@ -15,8 +15,8 @@ export const projectsData: Project[] = [
 
         Integrated with Facebook Messenger and Gmail, the chatbot utilizes GPT-4o mini to deliver personalized and multilingual support anytime, even outside office hours.`,
         technologies: ["OpenAI API", "Javascript", "Firebase", "Botpress.com", "Make.com"],
-        liveLink: "#",
-        githubLink: "https://github.com/yourusername/chatbot-project",
+        liveLink: null,
+        githubLink: null,
     },
     {
         title: "E-commerce Website Optimization Analysis",
