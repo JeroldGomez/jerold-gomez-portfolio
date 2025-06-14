@@ -64,7 +64,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                     <div className="space-y-2">
                         {/* Title and Date */}
                         <div className="space-y-1">
-                            <h3 className="text-lg font-semibold text-[color:var(--primary-blue)] flex items-center font-[family-name:var(--font-geist-sans)]">
+                            <h3 className="text-lg font-semibold text-[#fff] flex items-center font-[family-name:var(--font-geist-sans)]">
                                 {companyLink ? (
                                     <a
                                         href={companyLink}
