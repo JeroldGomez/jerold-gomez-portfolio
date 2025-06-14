@@ -15,7 +15,7 @@ export const projectsData: Project[] = [
 
         Integrated with Facebook Messenger and Gmail, the chatbot utilizes GPT-4o mini to deliver personalized and multilingual support anytime, even outside office hours.`,
         technologies: ["OpenAI API", "Javascript", "Firebase", "Botpress.com", "Make.com"],
-        liveLink: null,
+        liveLink: "https://drive.google.com/drive/folders/1Bbxja24-2hr59Pn7o6PyY4moXWz-5TBc?usp=sharing",
         githubLink: null,
     },
     {
