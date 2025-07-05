@@ -1,10 +1,10 @@
-# jerold-gomez.vercel.app
+# jeroldgomez.vercel.app
 
-[![Website](https://img.shields.io/badge/website-live-blue?style=flat-square&logo=vercel)](https://jerold-gomez.vercel.app)
+[![Website](https://img.shields.io/badge/website-live-blue?style=flat-square&logo=vercel)](https://jeroldgomez.vercel.app)
 
 Welcome to my personal portfolio repository! This project showcases my journey as a Computer Science student passionate about data science, AI, and building innovative solutions that make a meaningful impact.
 
-- 🌐 [Portfolio Website](https://jerold-gomez.vercel.app)
+- 🌐 [Portfolio Website](https://jeroldgomez.vercel.app)
 
 ## 🛠️ Built With
 
