@@ -44,9 +44,9 @@ export const projectsData: Project[] = [
         title: "E-Commerce Laptop Price Comparison Web Scraping",
         imageUrl: "/code_2.svg",
         description:
-        `A Python project that scrapes laptop prices and details from an e-commerce website. The script extracts essential information like product title, price, and brand, and stores it in a pandas DataFrame.
+        `Developed a Python-based web scraper to collect and compare laptop prices from Amazon. 
 
-        The collected data is then normalized and presented in an intuitive interface, allowing users to easily compare options and make informed purchasing decisions.`,
+        The script utilizes requests-html to handle JavaScript-rendered pages and extracts key product details including title, brand, price, and unique identifiers (ASINs). The collected data is then structured and organized into a Pandas DataFrame for further analysis and potential export. This project showcases skills in web scraping, data extraction, and data manipulation.`,
         technologies: ["Python (Pandas)", "Requests-html"],
         liveLink: null,
         githubLink: "https://github.com/JeroldGomez/e-commerce-laptop-price-comparison-web-scraping",

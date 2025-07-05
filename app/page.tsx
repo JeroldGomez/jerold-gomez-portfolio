@@ -34,6 +34,7 @@ export default function Home() {
         <div className="my-100"></div>
 
         {/* Work Experience Section */}
+        {/* Add Skills per experience */}
         <div className="flex flex-col" id="experience">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -144,6 +145,8 @@ export default function Home() {
         <div className="my-100"></div>
 
         <Contact />
+
+        {/* Add Testimonialsls*/}
       </section>
 
       <Footer />
