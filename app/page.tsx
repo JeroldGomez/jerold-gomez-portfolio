@@ -51,7 +51,7 @@ export default function Home() {
                 <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
                 </span>
               </h2>
-              <a
+              {/* <a
                 href="/JeroldGomez_Resume_Portfolio.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export default function Home() {
               >
                 View Resume
                 <ArrowUpRightIcon className="w-4 h-4 ml-1 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </a>
+              </a> */}
             </div>
           </motion.div>
 

@@ -16,9 +16,14 @@ export const workExperience: Experience[] = [
         alt: "Company A Logo",
         title: "Data Analyst Intern · City College of Tagaytay",
         companyLink: "",
-        description: `Enhanced data integrity and operational efficiency by cleaning and processing large enrollment/academic datasets using Google Sheets. Developed interactive Power BI dashboards, transforming complex data into actionable insights that supported institutional decision-making.
+        description: `Led the end-to-end analysis of the annual student enrollment data to provide strategic insights for the upcoming academic year. 
 
-        Contributed to a smoother onboarding experience by improving data capture processes for incoming freshmen and provided crucial systems support to maintain office productivity.`,
+        Engineered a data cleaning and validation pipeline in Google Sheets for a large, complex dataset, ensuring 100% data integrity for the analysis. 
+
+        Performed in-depth statistical analysis to identify key trends, including enrollment numbers per course, gender distribution within programs, the geographic breakdown of students, and the ratio of new freshmen to transferees. 
+
+        Architected and developed a dynamic, interactive dashboard in Power BI, which provided the management with an at-a-glance view of the student landscape, replacing hours of manual reporting and analysis that directly supported data-driven decisions on our institution
+`,
         location: "Tagaytay City, Cavite",
         locationType: "office",
     },
