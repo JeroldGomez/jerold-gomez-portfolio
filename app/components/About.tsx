@@ -72,11 +72,11 @@ const About = () => {
           className="w-full sm:w-2/3"
         >
           <p className="font-[family-name:var(--font-geist-sans)] text-[#fff] leading-relaxed">
-            I am a passionate{" "}
+            I am a{" "}
             <span className="font-normal text-[color:var(--primary-text-color)] font-[family-name:var(--font-playfair-display)] italic">
               Computer Science{" "}
             </span>
-            student with a keen interest in data science and AI. I enjoy working on projects that combine intelligent technologies and practical applications to improve user experiences and streamline processes.
+            graduate specializing in data science and AI. I enjoy working on projects that combine intelligent technologies and practical applications to improve user experiences and streamline processes.
           </p>
           <p className="font-[family-name:var(--font-geist-sans)] text-[#929DA7] leading-relaxed mt-4">
             Currently, I am exploring the field of artificial intelligence more deeply through my thesis project, the development of an{" "} 
