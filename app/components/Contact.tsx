@@ -171,7 +171,7 @@ const Contact = () => {
               {
                 href: "https://www.facebook.com/JeroldGomezzz",
                 icon: <Image src="/facebook.png" alt="Facebook" width={20} height={20} className="group-hover:opacity-100"/>,
-                text: "facebook.com/JeroldGomezzz",
+                text: "facebook.com/jeroldgomez.z",
                 label: "Jerold Gomez on Facebook"
               },
             ].map((link, index) => (
@@ -286,7 +286,7 @@ const Contact = () => {
               whileTap={{ scale: 0.97 }}
               type="submit"
               disabled={isSubmitting}
-              className={`text-[#000] font-[family-name:var(--font-geist-sans)] rounded-lg border border-solid border-transparent transition-colors flex items-center justify-center bg-[#fff] gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto ${
+              className={`cursor-pointer text-[#000] font-[family-name:var(--font-geist-sans)] rounded-lg border border-solid border-transparent transition-colors flex items-center justify-center bg-[#fff] gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto ${
                 isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
               }`}
             >

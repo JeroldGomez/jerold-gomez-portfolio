@@ -61,7 +61,7 @@ export default function CircleNavBar() {
                 });
               }
             }}
-            className="group flex items-center justify-center w-12 h-12 rounded-full border border-neutral-700/40 bg-neutral-800/40 hover:bg-neutral-700/60 hover:-translate-y-1.5 transition-all duration-250 ease-out focus:outline-none focus:ring-1 focus:ring-[#737373] mx-1"
+            className="cursor-pointer group flex items-center justify-center w-12 h-12 rounded-full border border-neutral-700/40 bg-neutral-800/40 hover:bg-neutral-700/60 hover:-translate-y-1.5 transition-all duration-250 ease-out focus:outline-none focus:ring-1 focus:ring-[#737373] mx-1"
           >
             <span className="text-white opacity-80 group-hover:opacity-100 transition-opacity">
               {item.icon}
