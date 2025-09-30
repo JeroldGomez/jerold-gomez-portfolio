@@ -169,7 +169,7 @@ const Contact = () => {
                 label: "Jerold Gomez on GitHub"
               },
               {
-                href: "https://www.facebook.com/JeroldGomezzz",
+                href: "https://www.facebook.com/jeroldgomez.z",
                 icon: <Image src="/facebook.png" alt="Facebook" width={20} height={20} className="group-hover:opacity-100"/>,
                 text: "facebook.com/jeroldgomez.z",
                 label: "Jerold Gomez on Facebook"
