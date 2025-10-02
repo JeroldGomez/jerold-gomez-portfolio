@@ -18,11 +18,11 @@ export const workExperience: Experience[] = [
         companyLink: "",
         description: `Led the end-to-end analysis of the annual student enrollment data to provide strategic insights for the upcoming academic year. 
 
-        Engineered a data cleaning and validation pipeline in Google Sheets for a large, complex dataset, ensuring 100% data integrity for the analysis. 
+        Engineered an automated ETL pipeline using Excel Power Query to consolidate, clean, and validate raw data from a folder of system-generated files, ensuring 100% data integrity. 
 
-        Performed in-depth statistical analysis to identify key trends, including enrollment numbers per course, gender distribution within programs, the geographic breakdown of students, and the ratio of new freshmen to transferees. 
+        Connected the validated data model to Power BI to architect and develop a dynamic, interactive dashboard that replaced hours of manual reporting. 
 
-        Architected and developed a dynamic, interactive dashboard in Power BI, which provided the management with an at-a-glance view of the student landscape, replacing hours of manual reporting and analysis that directly supported data-driven decisions on our institution
+        Utilized the dashboard to perform and present in-depth statistical analyses, identifying key trends in enrollment numbers per course, student demographics, geographic distribution, and the ratio of new freshmen to transferees, which directly supported data-driven decisions on our institution.
 `,
         location: "Tagaytay City, Cavite",
         locationType: "office",
