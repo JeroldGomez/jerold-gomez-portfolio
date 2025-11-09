@@ -11,6 +11,16 @@ export type Experience = {
 
 export const workExperience: Experience[] = [
     {
+        date: "Oct 2025 - Present",
+        logo: "/zuellig_svg.svg",
+        alt: "Zuellig Pharma Logo",
+        title: "CRM & Sales Data Analyst · Zuellig Pharma",
+        companyLink: "",
+        description: ``,
+        location: "Taguig, National Capital Region, Philippines",
+        locationType: "office",
+    },
+    {
         date: "Aug - Sep, 2024",
         logo: "/cct_logo_t_main.svg",
         alt: "Company A Logo",
