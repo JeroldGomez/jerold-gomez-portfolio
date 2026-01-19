@@ -151,12 +151,6 @@ const Contact = () => {
           <div className="flex flex-col gap-4 mt-2 sm:mt-4 text-[#c4c4c4]">
             {[
               {
-                href: "mailto:jeroldgomez345@gmail.com", 
-                icon: <Image src="/email-w.png" alt="Email" width={20} height={20} className="group-hover:opacity-100"/>,
-                text: "jeroldgomez345@gmail.com",
-                label: "Email Jerold Gomez"
-              },
-              {
                 href: "https://www.linkedin.com/in/jeroldgomez/",
                 icon: <Image src="/linkedin-logo.png" alt="LinkedIn" width={20} height={20} className="group-hover:opacity-100"/>,
                 text: "linkedin.com/in/jeroldgomez",

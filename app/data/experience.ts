@@ -37,14 +37,4 @@ export const workExperience: Experience[] = [
         location: "Tagaytay City, Cavite",
         locationType: "office",
     },
-    {
-        date: "2023 - 2024",
-        logo: "/cct_logo_t_main.svg",
-        alt: "University Logo",
-        title: "Junior IT Analyst · City College of Tagaytay",
-        companyLink: "",
-        description: `Contributed to seamless IT infrastructure operations and strategic reporting. Spearheaded the creation of comprehensive reports on initiatives, projects, and achievements, delivering actionable insights that fostered informed decision-making by leadership.`,
-        location: "Tagaytay City, Cavite",
-        locationType: "office"
-    },
 ]; 
