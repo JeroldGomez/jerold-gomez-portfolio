@@ -1,13 +1,12 @@
 'use client'; 
 
-import ExperienceItem from "./components/ExperienceItem";
 import ProjectCard from "./components/ProjectCard";
 import { motion } from 'framer-motion';
 import CircleNavBar from "./components/CircleNavBar";
 import { projectsData } from './data/projects';
-import { workExperience } from './data/experience';
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
@@ -33,52 +32,7 @@ export default function Home() {
         {/* Divider */}
         <div className="my-100"></div>
 
-        {/* Work Experience Section */}
-        {/* Add Skills per experience */}
-        <div className="flex flex-col" id="experience">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-5 gap-2 md:gap-0">
-              <h2 className="text-[#fff] text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)]">
-                <span className="text-[13px] font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
-                  02.
-                </span>
-                Where I&apos;ve Worked{" "}
-                <span className="font-normal font-[family-name:var(--font-playfair-display)] italic ml-1">
-                </span>
-              </h2>
-              {/* <a
-                href="/JeroldGomez_Resume_Portfolio.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group transition-all duration-200 text-[#fff] hover:text-[#929DA7] font-extralight text-[13px] font-[family-name:var(--font-geist-mono)]"
-              >
-                View Resume
-                <ArrowUpRightIcon className="w-4 h-4 ml-1 inline-block opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </a> */}
-            </div>
-          </motion.div>
-
-          <div className="flex flex-col gap-y-6">
-            {workExperience.map((exp, index) => (
-              <ExperienceItem
-                key={index}
-                date={exp.date}
-                logo={exp.logo}
-                alt={exp.alt}
-                title={exp.title}
-                companyLink={exp.companyLink}
-                description={exp.description}
-                location={exp.location}
-                locationType={exp.locationType}
-              />
-            ))}
-          </div>
-        </div>
+        <Experience />
         
         {/* Divider */}
         <div className="my-100"></div>
