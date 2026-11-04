@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { ArrowUpRightIcon, MapPinIcon, GlobeAltIcon } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
+import Tilt from 'react-parallax-tilt';
+import { Tilt_Neon } from "next/font/google";
 
 interface ExperienceItemProps {
     date: string;
@@ -56,13 +58,26 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
     );
 
     const content = (
+        <Tilt
+            className="tilt-container overflow-hidden rounded-lg"
+            perspective={1000}
+            glareEnable={true}
+            glareMaxOpacity={0.0}
+            glarePosition="all"
+            scale={1.017}
+            tiltMaxAngleX={2}
+            tiltMaxAngleY={2}
+            transitionSpeed={1000}
+        >
+
         <article
             className={`relative rounded-2xl border bg-[#111111] px-4 py-4 sm:px-5 sm:py-5 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] ${
                 isCurrent
-                    ? "border-cyan-400/25"
+                    ? "border-white/10"
                     : "border-white/10"
             } md:hover:border-white/20 md:transition-colors md:duration-200`}
         >
+           
             <div className="flex items-start gap-3 sm:gap-4">
                 <div className="h-11 w-11 sm:h-12 sm:w-12 shrink-0 rounded-xl bg-neutral-900 border border-white/10 flex items-center justify-center">
                     <Image
@@ -77,11 +92,11 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                     <div className="min-w-0 space-y-1">
                         <h3 className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px] sm:text-lg font-semibold text-white leading-snug font-[family-name:var(--font-geist-sans)]">
                             {role}
-                            {isCurrent && (
+                            {/* {isCurrent && (
                                 <span className="shrink-0 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.16em] text-cyan-300 font-[family-name:var(--font-geist-mono)]">
                                     Now
                                 </span>
-                            )}
+                            )} */}
                         </h3>
                         <p className="text-sm font-[family-name:var(--font-geist-sans)]">
                             {companyLabel}
@@ -130,7 +145,10 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                     </div>
                 </div>
             </div>
+            
+            
         </article>
+        </Tilt>
     );
 
     return (
