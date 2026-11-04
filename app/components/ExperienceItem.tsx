@@ -4,7 +4,6 @@ import Image from "next/image";
 import { ArrowUpRightIcon, MapPinIcon, GlobeAltIcon } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
 import Tilt from 'react-parallax-tilt';
-import { Tilt_Neon } from "next/font/google";
 
 interface ExperienceItemProps {
     date: string;
