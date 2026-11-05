@@ -111,9 +111,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                             {highlights.map((item) => (
                                 <li
                                     key={item}
-                                    className="grid grid-cols-[10px_1fr] gap-2 text-sm leading-relaxed text-[#c4c4c4] font-[family-name:var(--font-geist-sans)]"
+                                    className="grid grid-cols-[10px_1fr] gap-2 text-sm leading-relaxed text-[#929DA7] font-[family-name:var(--font-geist-sans)]"
                                 >
-                                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-400/70" aria-hidden />
+                                    <span className="mt-2 h-1.5 w-1.5 rounded-full border border-white/20" aria-hidden />
                                     <span>{item}</span>
                                 </li>
                             ))}
