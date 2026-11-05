@@ -22,7 +22,7 @@ export const workExperience: Experience[] = [
         description: ``,
         location: "Taguig, National Capital Region, Philippines",
         locationType: "office",
-        skills: ["Python","Polars","Business Intelligence (BI)","KPI Analytics", "Sales Operations", "Data Wrangling", "Data Modeling","Data Analysis"],
+        skills: ["Python","Polars","ETL","Business Intelligence (BI)","KPI Analytics", "Sales Operations", "Data Wrangling", "Data Modeling","Data Analysis"],
     },
     {
         date: "Aug — Sep 2024",
