@@ -39,7 +39,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="w-full sm:w-1/3 flex-shrink-0 mb-6 sm:mb-0"
+          className="mx-auto w-full max-w-[260px] sm:mx-0 sm:w-1/3 sm:max-w-none flex-shrink-0 mb-6 sm:mb-0"
         >
           <Tilt
             className="tilt-container overflow-hidden rounded-lg"

@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon, ArrowUpIcon } from "@heroicons/react/20/solid";
+import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
 
 const Footer = () => {
