@@ -126,25 +126,19 @@ const Contact = () => {
       id="contact"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.45, ease: "easeOut" }}
       className="w-full mt-20 sm:mt-28"
     >
       <h2 className="text-[#fff] text-2xl sm:text-2xl font-semibold font-[family-name:var(--font-geist-sans)] mb-5">
         <span className="text-[13px] font-light font-[family-name:var(--font-geist-mono)] mr-2 opacity-70">
           04.
         </span>
-        Let&apos;s Connect{" "} {/* eslint-disable-line react/no-unescaped-entities */}
+        Let&apos;s Connect{" "}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
-        <motion.div
-          initial={{ opacity: 0, x: -25 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-          className="flex flex-col gap-5 sm:gap-6"
-        >
+        <div className="flex flex-col gap-5 sm:gap-6">
           <p className="text-[#c4c4c4] font-[family-name:var(--font-geist-sans)] font-light">
             I&apos;m always open to discussing new projects, creative ideas, or opportunities. Whether you have a question or just want to say hi, I&apos;ll do my best to get back to you!
           </p>
@@ -181,7 +175,7 @@ const Contact = () => {
                   text-[color:var(--secondary-blue)]
                   border border-transparent hover:border-neutral-700 dark:hover:border-neutral-600
                   hover:bg-neutral-800/30 dark:hover:bg-neutral-900/40
-                  transition-all duration-200 ease-out
+                  transition-colors duration-200 ease-out
                 "
               >
                 <span className="flex-shrink-0 text-[color:var(--primary-blue)] group-hover:scale-110 transition-transform">
@@ -191,18 +185,10 @@ const Contact = () => {
               </a>
             ))}
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, x: 25 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ 
-            duration: 0.8,
-            delay: 0.4,
-            ease: [0.25, 0.1, 0.25, 1]
-          }}
-          className="p-6 rounded-xl bg-neutral-800/30 backdrop-blur-sm border border-neutral-700/50 hover:border-neutral-600/70 transition-all duration-300 hover:shadow-lg hover:shadow-neutral-900/20"
+        <div
+          className="p-6 rounded-xl border border-neutral-700/50 bg-neutral-900/80 transition-colors duration-300 sm:bg-neutral-800/30 sm:backdrop-blur-sm sm:hover:border-neutral-600/70 sm:hover:shadow-lg sm:hover:shadow-neutral-900/20"
         >
           <h3 className="text-xl sm:text-lg font-semibold mb-5 sm:mb-3 font-[family-name:var(--font-geist-sans)] text-[#fff]">
             Send a Quick Message
@@ -297,7 +283,7 @@ const Contact = () => {
               )}
             </motion.button>
           </form>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );
