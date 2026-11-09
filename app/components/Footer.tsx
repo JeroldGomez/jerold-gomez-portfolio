@@ -68,13 +68,13 @@ const Footer = () => {
             Made with curiosity <span className="px-1 text-neutral-600">/</span>{" "}
             Next.js &amp; Tailwind CSS
           </p>
-          <a
+          {/* <a
             href="#home"
             className="group inline-flex items-center gap-1 transition-colors hover:text-white focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:justify-end"
           >
             Back to top
             <ArrowUpIcon aria-hidden="true" className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5" />
-          </a>
+          </a> */}
         </div>
       </div>
     </motion.footer>
