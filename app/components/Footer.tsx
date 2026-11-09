@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="mx-auto max-w-3xl">
         <div
           aria-hidden="true"
-          className="h-px border-t border-neutral-800/80 from-transparent via-neutral-600/80 to-transparent"
+          className="h-px border-t border-neutral-700/80 from-transparent via-neutral-600/80 to-transparent"
         />
 
         <div className="grid gap-8 py-10 sm:grid-cols-[1fr_auto] sm:items-end">
@@ -62,7 +62,7 @@ const Footer = () => {
           </nav>
         </div>
 
-        <div className="flex flex-col gap-3 border-t border-neutral-800/80 pt-5 font-[family-name:var(--font-geist-mono)] text-[11px] text-[#929DA7] sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 border-t border-neutral-700/80 pt-5 font-[family-name:var(--font-geist-mono)] text-[11px] text-[#929DA7] sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Jerold Gomez</p>
           <p>
             Made with curiosity <span className="px-1 text-neutral-600">/</span>{" "}
